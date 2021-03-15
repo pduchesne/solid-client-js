@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interface: Access &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,17 +20,13 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.d8bbf5861d671d414e1a.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -135,7 +132,9 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
 
 <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
@@ -275,7 +274,7 @@
            
       
          
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Interface: Access</a>
+             <li class="nav-item active toctree-l1"> <a class="nav-link" href="#">Interface: Access</a>
              
              
                
@@ -328,7 +327,8 @@
   </ul>
 </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
@@ -339,45 +339,53 @@
 </div>
 
 <nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#properties" class="nav-link">Properties</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Properties</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#append" class="nav-link">append</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#controlread" class="nav-link">controlRead</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#controlwrite" class="nav-link">controlWrite</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#read" class="nav-link">read</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#write" class="nav-link">write</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-    </ul>
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#properties">
+     Properties
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Properties
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#append">
+     append
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#controlread">
+     controlRead
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#controlwrite">
+     controlWrite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#read">
+     read
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#write">
+     write
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
 
@@ -385,6 +393,9 @@
           </div>
           
 
+          
+          
+            
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
@@ -419,31 +430,31 @@
 <div class="section" id="append">
 <h3>append<a class="headerlink" href="#append" title="Permalink to this headline">¶</a></h3>
 <p>• <strong>append</strong>: <em>boolean</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L63">src/access/universal.ts:63</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L63">src/access/universal.ts:63</a></p>
 </div>
 <hr class="docutils" />
 <div class="section" id="controlread">
 <h3>controlRead<a class="headerlink" href="#controlread" title="Permalink to this headline">¶</a></h3>
 <p>• <strong>controlRead</strong>: <em>boolean</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L65">src/access/universal.ts:65</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L65">src/access/universal.ts:65</a></p>
 </div>
 <hr class="docutils" />
 <div class="section" id="controlwrite">
 <h3>controlWrite<a class="headerlink" href="#controlwrite" title="Permalink to this headline">¶</a></h3>
 <p>• <strong>controlWrite</strong>: <em>boolean</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L66">src/access/universal.ts:66</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L66">src/access/universal.ts:66</a></p>
 </div>
 <hr class="docutils" />
 <div class="section" id="read">
 <h3>read<a class="headerlink" href="#read" title="Permalink to this headline">¶</a></h3>
 <p>• <strong>read</strong>: <em>boolean</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L62">src/access/universal.ts:62</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L62">src/access/universal.ts:62</a></p>
 </div>
 <hr class="docutils" />
 <div class="section" id="write">
 <h3>write<a class="headerlink" href="#write" title="Permalink to this headline">¶</a></h3>
 <p>• <strong>write</strong>: <em>boolean</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L64">src/access/universal.ts:64</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L64">src/access/universal.ts:64</a></p>
 </div>
 </div>
 </div>
@@ -467,7 +478,7 @@
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.d8bbf5861d671d414e1a.js"></script>
 
 
     <footer class="footer">

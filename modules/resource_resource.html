@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module: resource/resource &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,17 +20,13 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.d8bbf5861d671d414e1a.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -135,7 +132,9 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
 
 <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
@@ -219,7 +218,7 @@
            
       
          
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Module: resource/resource</a>
+             <li class="nav-item active toctree-l1"> <a class="nav-link" href="#">Module: resource/resource</a>
              
              
                
@@ -328,7 +327,8 @@
   </ul>
 </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
@@ -339,103 +339,122 @@
 </div>
 
 <nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classes">
+     Classes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getcontenttype">
+     getContentType
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#classes" class="nav-link">Classes</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getcontenttype" class="nav-link">getContentType</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#parameters" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getpodowner" class="nav-link">getPodOwner</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getresourceinfo" class="nav-link">getResourceInfo</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getsourceurl" class="nav-link">getSourceUrl</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id5" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#iscontainer" class="nav-link">isContainer</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id6" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#ispodowner" class="nav-link">isPodOwner</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id7" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#israwdata" class="nav-link">isRawData</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id8" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters:
+      </a>
+     </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getpodowner">
+     getPodOwner
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getresourceinfo">
+     getResourceInfo
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getsourceurl">
+     getSourceUrl
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Parameters:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iscontainer">
+     isContainer
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ispodowner">
+     isPodOwner
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#israwdata">
+     isRawData
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
 
@@ -443,6 +462,9 @@
           </div>
           
 
+          
+          
+            
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
@@ -496,7 +518,7 @@
 </table>
 <p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
 <p>The Content Type, if known, or null if not known.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L105">src/resource/resource.ts:105</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L105">src/resource/resource.ts:105</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -529,7 +551,7 @@
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <em>null</em></p>
 <p>The WebID of the owner of the Pod the Resource is in, if provided, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L139">src/resource/resource.ts:139</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L139">src/resource/resource.ts:139</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -561,7 +583,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
 <p>Promise resolving to the metadata describing the given Resource, or rejecting if fetching it failed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L54">src/resource/resource.ts:54</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L54">src/resource/resource.ts:54</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -584,7 +606,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
 <p>The URL from which the Resource has been fetched, or null if it is not known.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L113">src/resource/resource.ts:113</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L113">src/resource/resource.ts:113</a></p>
 <p>▸ <strong>getSourceUrl</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#resource"><em>Resource</em></a>): <em>string</em> | <em>null</em></p>
 </div>
 <div class="section" id="id5">
@@ -602,7 +624,7 @@ fetching the resource itself.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L114">src/resource/resource.ts:114</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L114">src/resource/resource.ts:114</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -627,7 +649,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether <code class="docutils literal notranslate"><span class="pre">resource</span></code> is a Container.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L82">src/resource/resource.ts:82</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L82">src/resource/resource.ts:82</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -664,7 +686,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em> | <em>null</em></p>
 <p>Whether the given WebID is the Pod Owner’s, if the Pod Owner is exposed, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it is not exposed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L166">src/resource/resource.ts:166</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L166">src/resource/resource.ts:166</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -690,7 +712,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether <code class="docutils literal notranslate"><span class="pre">resource</span></code> contains raw data.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/resource.ts#L97">src/resource/resource.ts:97</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/resource.ts#L97">src/resource/resource.ts:97</a></p>
 </div>
 </div>
 </div>
@@ -715,7 +737,7 @@ fetching the resource itself.</p>
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.d8bbf5861d671d414e1a.js"></script>
 
 
     <footer class="footer">

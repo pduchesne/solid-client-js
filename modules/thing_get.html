@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module: thing/get &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,17 +20,13 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.d8bbf5861d671d414e1a.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -135,7 +132,9 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
 
 <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
@@ -240,7 +239,7 @@
            
       
          
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Module: thing/get</a>
+             <li class="nav-item active toctree-l1"> <a class="nav-link" href="#">Module: thing/get</a>
              
              
                
@@ -328,7 +327,8 @@
   </ul>
 </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
@@ -339,175 +339,208 @@
 </div>
 
 <nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getboolean">
+     getBoolean
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getboolean" class="nav-link">getBoolean</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#parameters" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getbooleanall" class="nav-link">getBooleanAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdatetime" class="nav-link">getDatetime</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdatetimeall" class="nav-link">getDatetimeAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdecimal" class="nav-link">getDecimal</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id5" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdecimalall" class="nav-link">getDecimalAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id6" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getinteger" class="nav-link">getInteger</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id7" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getintegerall" class="nav-link">getIntegerAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id8" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringbylocaleall" class="nav-link">getStringByLocaleAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id9" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringnolocale" class="nav-link">getStringNoLocale</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id10" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringnolocaleall" class="nav-link">getStringNoLocaleAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id11" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringwithlocale" class="nav-link">getStringWithLocale</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id12" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringwithlocaleall" class="nav-link">getStringWithLocaleAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id13" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#geturl" class="nav-link">getUrl</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id14" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#geturlall" class="nav-link">getUrlAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id15" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters:
+      </a>
+     </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getbooleanall">
+     getBooleanAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdatetime">
+     getDatetime
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdatetimeall">
+     getDatetimeAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdecimal">
+     getDecimal
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdecimalall">
+     getDecimalAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getinteger">
+     getInteger
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getintegerall">
+     getIntegerAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringbylocaleall">
+     getStringByLocaleAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringnolocale">
+     getStringNoLocale
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringnolocaleall">
+     getStringNoLocaleAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringwithlocale">
+     getStringWithLocale
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringwithlocaleall">
+     getStringWithLocaleAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geturl">
+     getUrl
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geturlall">
+     getUrlAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
 
@@ -515,6 +548,9 @@
           </div>
           
 
+          
+          
+            
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
@@ -577,7 +613,7 @@ If the Property has multiple boolean values, returns one of its values.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em> | <em>null</em></p>
 <p>A boolean value for the given Property if present, or null if the Property is not present or the value is not of type boolean.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L99">src/thing/get.ts:99</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L99">src/thing/get.ts:99</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -609,7 +645,7 @@ If the Property’s value is not of type boolean, omits that value in the array.
 </table>
 <p><strong>Returns:</strong> <em>boolean</em>[]</p>
 <p>An array of boolean values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L126">src/thing/get.ts:126</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L126">src/thing/get.ts:126</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -641,7 +677,7 @@ If the Property has multiple datetime values, returns one of its values.</p>
 </table>
 <p><strong>Returns:</strong> Date | <em>null</em></p>
 <p>A datetime value for the given Property if present, or null if the Property is not present or the value is not of type datetime.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L151">src/thing/get.ts:151</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L151">src/thing/get.ts:151</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -673,7 +709,7 @@ If the Property’s value is not of type datetime, omits that value in the array
 </table>
 <p><strong>Returns:</strong> Date[]</p>
 <p>An array of datetime values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L178">src/thing/get.ts:178</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L178">src/thing/get.ts:178</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -705,7 +741,7 @@ If the Property has multiple decimal values, returns one of its values.</p>
 </table>
 <p><strong>Returns:</strong> <em>number</em> | <em>null</em></p>
 <p>A decimal value for the given Property if present, or null if the Property is not present or the value is not of type decimal.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L203">src/thing/get.ts:203</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L203">src/thing/get.ts:203</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -737,7 +773,7 @@ If the Property’s value is not of type decimal, omits that value in the array.
 </table>
 <p><strong>Returns:</strong> <em>number</em>[]</p>
 <p>An array of decimal values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L230">src/thing/get.ts:230</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L230">src/thing/get.ts:230</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -769,7 +805,7 @@ If the Property has multiple integer values, returns one of its values.</p>
 </table>
 <p><strong>Returns:</strong> <em>number</em> | <em>null</em></p>
 <p>A integer value for the given Property if present, or null if the Property is not present or the value is not of type datetime.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L255">src/thing/get.ts:255</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L255">src/thing/get.ts:255</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -801,7 +837,7 @@ If the Property’s value is not of type integer, omits that value in the array.
 </table>
 <p><strong>Returns:</strong> <em>number</em>[]</p>
 <p>An array of integer values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L282">src/thing/get.ts:282</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L282">src/thing/get.ts:282</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -832,7 +868,7 @@ specified <a class="reference external" href="interfaces.html#thing">Thing</a> (
 </table>
 <p><strong>Returns:</strong> <em>Map</em>&lt;string, string[]&gt;</p>
 <p>A Map of objects, keyed on locale with the value an array of string values (for that locale).</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L356">src/thing/get.ts:356</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L356">src/thing/get.ts:356</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -864,7 +900,7 @@ If the Property has multiple string values, returns one of its values.</p>
 </table>
 <p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
 <p>A string value for the given Property if present, or null if the Property is not present or the value is not of type string.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L388">src/thing/get.ts:388</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L388">src/thing/get.ts:388</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -896,7 +932,7 @@ If the Property’s value is not of type string, omits that value in the array.<
 </table>
 <p><strong>Returns:</strong> <em>string</em>[]</p>
 <p>An array of string values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L411">src/thing/get.ts:411</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L411">src/thing/get.ts:411</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -932,7 +968,7 @@ If the Property has multiple string values for the specified locale, returns one
 </table>
 <p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
 <p>A localised string value for the given Property if present in the specified <code class="docutils literal notranslate"><span class="pre">locale</span></code>, or null otherwise.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L308">src/thing/get.ts:308</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L308">src/thing/get.ts:308</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -968,7 +1004,7 @@ If the Property’s value is not a string of the specified locale, omits that va
 </table>
 <p><strong>Returns:</strong> <em>string</em>[]</p>
 <p>An array of localised string values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L335">src/thing/get.ts:335</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L335">src/thing/get.ts:335</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1000,7 +1036,7 @@ If the Property has multiple URL values, returns one of its URL values.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <em>null</em></p>
 <p>A URL value for the given Property if present, or null if the Property is not present or the value is not of type URL.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L49">src/thing/get.ts:49</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L49">src/thing/get.ts:49</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1032,7 +1068,7 @@ If the Property’s value is not of type URL, omits that value in the array.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>An array of URL values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/thing/get.ts#L76">src/thing/get.ts:76</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/thing/get.ts#L76">src/thing/get.ts:76</a></p>
 </div>
 </div>
 </div>
@@ -1057,7 +1093,7 @@ If the Property’s value is not of type URL, omits that value in the array.</p>
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.d8bbf5861d671d414e1a.js"></script>
 
 
     <footer class="footer">

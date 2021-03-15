@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module: access/universal &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,17 +20,13 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.d8bbf5861d671d414e1a.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -135,7 +132,9 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
 
 <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
@@ -156,7 +155,7 @@
      
       
          
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Module: access/universal</a>
+             <li class="nav-item active toctree-l1"> <a class="nav-link" href="#">Module: access/universal</a>
              
              
                
@@ -328,7 +327,8 @@
   </ul>
 </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
@@ -339,155 +339,185 @@
 </div>
 
 <nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interfaces">
+     Interfaces
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getaccessfor">
+     getAccessFor
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#interfaces" class="nav-link">Interfaces</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getaccessfor" class="nav-link">getAccessFor</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#parameters" class="nav-link">Parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getaccessforall" class="nav-link">getAccessForAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getagentaccess" class="nav-link">getAgentAccess</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id5" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getagentaccessall" class="nav-link">getAgentAccessAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id6" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getgroupaccess" class="nav-link">getGroupAccess</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id7" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getgroupaccessall" class="nav-link">getGroupAccessAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id8" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getpublicaccess" class="nav-link">getPublicAccess</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id9" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#setaccessfor" class="nav-link">setAccessFor</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id10" class="nav-link">Parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id11" class="nav-link">Parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id12" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#setagentaccess" class="nav-link">setAgentAccess</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id13" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#setgroupaccess" class="nav-link">setGroupAccess</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id14" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#setpublicaccess" class="nav-link">setPublicAccess</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id15" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Parameters:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Parameters:
+      </a>
+     </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getaccessforall">
+     getAccessForAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getagentaccess">
+     getAgentAccess
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getagentaccessall">
+     getAgentAccessAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getgroupaccess">
+     getGroupAccess
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getgroupaccessall">
+     getGroupAccessAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getpublicaccess">
+     getPublicAccess
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setaccessfor">
+     setAccessFor
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Parameters:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Parameters:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setagentaccess">
+     setAgentAccess
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setgroupaccess">
+     setGroupAccess
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setpublicaccess">
+     setPublicAccess
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
 
@@ -495,6 +525,9 @@
           </div>
           
 
+          
+          
+            
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
@@ -583,7 +616,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>What access the given Agent or Group has.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/for.ts#L68">src/access/for.ts:68</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/for.ts#L68">src/access/for.ts:68</a></p>
 <p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>: <em>public</em>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>typeof</em> internal_defaultFetchOptions): <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>Get an overview of what access is defined for everyone.</p>
 <p>This function works with Solid Pods that implement either the Web Access
@@ -631,7 +664,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>What access have been granted to the general public.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/for.ts#L100">src/access/for.ts:100</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/for.ts#L100">src/access/for.ts:100</a></p>
 <p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>: Actor, <code class="docutils literal notranslate"><span class="pre">actor?</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <em>typeof</em> internal_defaultFetchOptions, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>typeof</em> internal_defaultFetchOptions): <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 </div>
 <div class="section" id="id3">
@@ -658,7 +691,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/for.ts#L105">src/access/for.ts:105</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/for.ts#L105">src/access/for.ts:105</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -715,7 +748,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;Record&lt;<a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a>&gt; | <em>null</em>&gt;</p>
 <p>What access is set for the given resource, grouped by resp. Agent or Group.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/for.ts#L173">src/access/for.ts:173</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/for.ts#L173">src/access/for.ts:173</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -770,7 +803,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L93">src/access/universal.ts:93</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L93">src/access/universal.ts:93</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -823,7 +856,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;Record&lt;<a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a>&gt; | <em>null</em>&gt;</p>
 <p>The access information to the Resource, grouped by Agent.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L201">src/access/universal.ts:201</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L201">src/access/universal.ts:201</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -878,7 +911,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L239">src/access/universal.ts:239</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L239">src/access/universal.ts:239</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -931,7 +964,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;Record&lt;<a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a>&gt; | <em>null</em>&gt;</p>
 <p>The access information to the Resource, sorted by Group.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L279">src/access/universal.ts:279</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L279">src/access/universal.ts:279</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -982,7 +1015,7 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L384">src/access/universal.ts:384</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L384">src/access/universal.ts:384</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1052,7 +1085,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>What access has been set for the given Agent explicitly.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/for.ts#L224">src/access/for.ts:224</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/for.ts#L224">src/access/for.ts:224</a></p>
 <p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>: <em>public</em>, <code class="docutils literal notranslate"><span class="pre">access</span></code>: <em>Partial</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a>&gt;, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>typeof</em> internal_defaultFetchOptions): <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>Set access to a Resource for everyone.</p>
 <p>This function works with Solid Pods that implement either the Web Access
@@ -1114,7 +1147,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>What access has been set for the given Agent explicitly.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/for.ts#L267">src/access/for.ts:267</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/for.ts#L267">src/access/for.ts:267</a></p>
 <p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>: Actor, <code class="docutils literal notranslate"><span class="pre">access</span></code>: <em>Partial</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a>&gt;, <code class="docutils literal notranslate"><span class="pre">actor?</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <em>typeof</em> internal_defaultFetchOptions, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>typeof</em> internal_defaultFetchOptions): <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 </div>
 <div class="section" id="id12">
@@ -1144,7 +1177,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/for.ts#L273">src/access/for.ts:273</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/for.ts#L273">src/access/for.ts:273</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1213,7 +1246,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>What access has been set for the given Agent explicitly.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L142">src/access/universal.ts:142</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L142">src/access/universal.ts:142</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1282,7 +1315,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>What access has been set for the given Group explicitly.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L327">src/access/universal.ts:327</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L327">src/access/universal.ts:327</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1347,7 +1380,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><em>Access</em></span></a> | <em>null</em>&gt;</p>
 <p>What access has been set for everybody explicitly.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/access/universal.ts#L431">src/access/universal.ts:431</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/access/universal.ts#L431">src/access/universal.ts:431</a></p>
 </div>
 </div>
 </div>
@@ -1372,7 +1405,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.d8bbf5861d671d414e1a.js"></script>
 
 
     <footer class="footer">

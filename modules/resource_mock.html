@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module: resource/mock &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,17 +20,13 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.d8bbf5861d671d414e1a.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -135,7 +132,9 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
 
 <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
@@ -212,7 +211,7 @@
            
       
          
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Module: resource/mock</a>
+             <li class="nav-item active toctree-l1"> <a class="nav-link" href="#">Module: resource/mock</a>
              
              
                
@@ -328,7 +327,8 @@
   </ul>
 </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
@@ -339,65 +339,76 @@
 </div>
 
 <nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mockcontainerfrom">
+     mockContainerFrom
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#mockcontainerfrom" class="nav-link">mockContainerFrom</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#parameters" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#mockfetcherror" class="nav-link">mockFetchError</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#mockfilefrom" class="nav-link">mockFileFrom</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#mocksoliddatasetfrom" class="nav-link">mockSolidDatasetFrom</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters:
+      </a>
+     </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mockfetcherror">
+     mockFetchError
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mockfilefrom">
+     mockFileFrom
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mocksoliddatasetfrom">
+     mockSolidDatasetFrom
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
 
@@ -405,6 +416,9 @@
           </div>
           
 
+          
+          
+            
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
@@ -457,7 +471,7 @@ unit tests that require persisted Containers; e.g., unit tests that call <a clas
 </table>
 <p><strong>Returns:</strong> <em>Unpromisify</em>&lt;ReturnType&lt;<em>typeof</em> <a class="reference external" href="resource_soliddataset.html#getsoliddataset"><em>getSolidDataset</em></a>&gt;&gt;</p>
 <p>A mock SolidDataset that appears to be retrieved from the <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/mock.ts#L81">src/resource/mock.ts:81</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/mock.ts#L81">src/resource/mock.ts:81</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -498,7 +512,7 @@ that fetch Resources (like <a class="reference external" href="resource_soliddat
 </table>
 <p><strong>Returns:</strong> <a class="reference internal" href="../classes/resource_resource.fetcherror.html"><span class="doc std std-doc"><em>FetchError</em></span></a></p>
 <p>A mock Error that represents not having been able to fetch the Resource at <code class="docutils literal notranslate"><span class="pre">url</span></code> due to a 404 Response.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/mock.ts#L144">src/resource/mock.ts:144</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/mock.ts#L144">src/resource/mock.ts:144</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -535,7 +549,7 @@ unit tests that require persisted Files; e.g. unit tests that call <a class="ref
 </table>
 <p><strong>Returns:</strong> <em>Unpromisify</em>&lt;ReturnType&lt;<em>typeof</em> <a class="reference external" href="resource_file.html#getfile"><em>getFile</em></a>&gt;&gt;</p>
 <p>A mock File that appears to be retrieved from the <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/mock.ts#L107">src/resource/mock.ts:107</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/mock.ts#L107">src/resource/mock.ts:107</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -568,7 +582,7 @@ unit tests that require persisted SolidDatasets; e.g., unit tests that call <a c
 </table>
 <p><strong>Returns:</strong> <em>Unpromisify</em>&lt;ReturnType&lt;<em>typeof</em> <a class="reference external" href="resource_soliddataset.html#getsoliddataset"><em>getSolidDataset</em></a>&gt;&gt;</p>
 <p>A mock SolidDataset that appears to be retrieved from the <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2bda423/src/resource/mock.ts#L51">src/resource/mock.ts:51</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d9d85b0/src/resource/mock.ts#L51">src/resource/mock.ts:51</a></p>
 </div>
 </div>
 </div>
@@ -593,7 +607,7 @@ unit tests that require persisted SolidDatasets; e.g., unit tests that call <a c
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.d8bbf5861d671d414e1a.js"></script>
 
 
     <footer class="footer">
