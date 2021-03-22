@@ -1149,14 +1149,16 @@
 <h3>ResourceRule<a class="headerlink" href="#resourcerule" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>ResourceRule</strong>: <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a></p>
 <p>A ResourceRule is like a <a class="reference external" href="acp_rule.html#rule">Rule</a>, but applied to a <a class="reference external" href="acp_policy.html#resourcepolicy">ResourcePolicy</a> and therefore not re-used across different Resources, but only used for a single Resource and stored in that Resource’s Access Control Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L57">src/acp/rule.ts:57</a></p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L59">src/acp/rule.ts:59</a></p>
 </div>
 <hr class="docutils" />
 <div class="section" id="rule">
 <h3>Rule<a class="headerlink" href="#rule" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>Rule</strong>: <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a></p>
 <p>A Rule can be applied to a <a class="reference external" href="acp_policy.html#policy">Policy</a> to determine under what circumstances that Policy is applied to a Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L53">src/acp/rule.ts:53</a></p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L54">src/acp/rule.ts:54</a></p>
 </div>
 </div>
 <div class="section" id="id2">
@@ -1170,7 +1172,7 @@
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Apply the <a class="reference external" href="acp_rule.html#rule">Rule</a> to an additional agent.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="parameters">
 <h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1193,7 +1195,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the <a class="reference external" href="acp_rule.html#rule">Rule</a>, applying to an additional agent.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L598">src/acp/rule.ts:598</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L610">src/acp/rule.ts:610</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1209,7 +1211,7 @@ function is still experimental and subject to change, even in a non-major releas
 requesting access to a resource is <strong>not</strong> present in <strong>any</strong> of the “All Of” rules,
 they will not be granted access.</p>
 <p>Also see <a class="reference external" href="acp_rule.html#addanyofruleurl">addAnyOfRuleUrl</a> and <a class="reference external" href="acp_rule.html#addnoneofruleurl">addNoneOfRuleUrl</a>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="type-parameters">
 <h4>Type parameters:<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1247,7 +1249,7 @@ they will not be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the new rule added.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L85">src/acp/rule.ts:85</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L87">src/acp/rule.ts:87</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1263,7 +1265,7 @@ function is still experimental and subject to change, even in a non-major releas
 requesting access to a resource is present in <strong>any</strong> of the “Any Of” rules,
 they will be granted access.</p>
 <p>Also see <a class="reference external" href="acp_rule.html#addallofruleurl">addAllOfRuleUrl</a> and <a class="reference external" href="acp_rule.html#addnoneofruleurl">addNoneOfRuleUrl</a>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id4">
 <h4>Type parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1301,7 +1303,7 @@ they will be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the new rule added.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L164">src/acp/rule.ts:164</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L166">src/acp/rule.ts:166</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1314,7 +1316,7 @@ they will be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Apply the <a class="reference external" href="acp_rule.html#rule">Rule</a> to an additional Client.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id6">
 <h4>Parameters:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1337,7 +1339,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the <a class="reference external" href="acp_rule.html#rule">Rule</a>, applying to an additional Client.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L902">src/acp/rule.ts:902</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L917">src/acp/rule.ts:917</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1350,7 +1352,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Apply the <a class="reference external" href="acp_rule.html#rule">Rule</a> to an additional group.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id7">
 <h4>Parameters:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1373,7 +1375,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the <a class="reference external" href="acp_rule.html#rule">Rule</a>, applying to an additional group.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L662">src/acp/rule.ts:662</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L674">src/acp/rule.ts:674</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1389,7 +1391,7 @@ function is still experimental and subject to change, even in a non-major releas
 requesting access to a resource is present in <strong>any</strong> of the forbidden rules,
 they will <strong>not</strong> be granted access.</p>
 <p>Also see <a class="reference external" href="acp_rule.html#addallofruleurl">addAllOfRuleUrl</a> and <a class="reference external" href="acp_rule.html#addanyofruleurl">addAnyOfRuleUrl</a>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id8">
 <h4>Type parameters:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1427,7 +1429,7 @@ they will <strong>not</strong> be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the new rule added.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L243">src/acp/rule.ts:243</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L245">src/acp/rule.ts:245</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1440,6 +1442,7 @@ they will <strong>not</strong> be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Initialise a new, empty <a class="reference external" href="acp_rule.html#resourcerule">ResourceRule</a> for the given Resource.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id10">
 <h4>Parameters:<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1461,7 +1464,7 @@ function is still experimental and subject to change, even in a non-major releas
 </tbody>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#resourcerule"><em>ResourceRule</em></a></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L332">src/acp/rule.ts:332</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L336">src/acp/rule.ts:336</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1474,6 +1477,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Initialise a new, empty <a class="reference external" href="acp_rule.html#rule">Rule</a>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id11">
 <h4>Parameters:<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1491,7 +1495,7 @@ function is still experimental and subject to change, even in a non-major releas
 </tbody>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L315">src/acp/rule.ts:315</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L318">src/acp/rule.ts:318</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1506,7 +1510,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>List all the agents a <a class="reference external" href="acp_rule.html#rule">Rule</a> applies <strong>directly</strong> to. This will not include agents
 that are part of a group the <a class="reference external" href="acp_rule.html#rule">Rule</a> applies to, nor will it include specific agent
 classes, such as authenticated or public agents.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id12">
 <h4>Parameters:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1525,7 +1529,7 @@ classes, such as authenticated or public agents.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>[]</p>
 <p>A list of the WebIDs of agents included in the rule.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L545">src/acp/rule.ts:545</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L557">src/acp/rule.ts:557</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1538,7 +1542,7 @@ classes, such as authenticated or public agents.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Get the “All Of” <a class="reference external" href="acp_rule.html#rule">Rule</a>s for the given <a class="reference external" href="acp_policy.html#policy">Policy</a></p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id13">
 <h4>Type parameters:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1572,7 +1576,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>A list of the “All Of” <a class="reference external" href="acp_rule.html#rule">Rule</a>s</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L142">src/acp/rule.ts:142</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L144">src/acp/rule.ts:144</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1585,7 +1589,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Get the “Any Of” <a class="reference external" href="acp_rule.html#rule">Rule</a>s for the given <a class="reference external" href="acp_policy.html#policy">Policy</a></p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id15">
 <h4>Type parameters:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1619,7 +1623,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>A list of the “Any Of” <a class="reference external" href="acp_rule.html#rule">Rule</a>s</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L221">src/acp/rule.ts:221</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L223">src/acp/rule.ts:223</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1633,7 +1637,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>List all the clients a <a class="reference external" href="acp_rule.html#rule">Rule</a> applies <strong>directly</strong> to. This will not include
 specific client classes, such as public clients.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id17">
 <h4>Parameters:<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1652,7 +1656,7 @@ specific client classes, such as public clients.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>[]</p>
 <p>A list of the WebIDs of clients included in the rule.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L860">src/acp/rule.ts:860</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L875">src/acp/rule.ts:875</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1665,7 +1669,7 @@ specific client classes, such as public clients.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Lists all the groups a <a class="reference external" href="acp_rule.html#rule">Rule</a> applies to.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id18">
 <h4>Parameters:<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1684,7 +1688,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>A list of the [[URL]]’s of groups included in the rule.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L630">src/acp/rule.ts:630</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L642">src/acp/rule.ts:642</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1697,7 +1701,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Get the “None Of” <a class="reference external" href="acp_rule.html#rule">Rule</a>s for the given <a class="reference external" href="acp_policy.html#policy">Policy</a></p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id19">
 <h4>Type parameters:<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1731,7 +1735,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>A list of the forbidden <a class="reference external" href="acp_rule.html#rule">Rule</a>s</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L300">src/acp/rule.ts:300</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L302">src/acp/rule.ts:302</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1745,6 +1749,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Get the <a class="reference external" href="acp_rule.html#resourcerule">ResourceRule</a> with the given name from an Resource’s Access Control
 Resource.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id21">
 <h4>Parameters:<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1767,7 +1772,7 @@ Resource.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#resourcerule"><em>ResourceRule</em></a> | <em>null</em></p>
 <p>The requested <a class="reference external" href="acp_rule.html#resourcerule">ResourceRule</a>, if it exists, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it does not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L378">src/acp/rule.ts:378</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L384">src/acp/rule.ts:384</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1780,6 +1785,7 @@ Resource.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Gets the <a class="reference external" href="acp_rule.html#resourcerule">ResourceRule</a>s from a Resource’s Access Control Resource.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id22">
 <h4>Parameters:<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1798,7 +1804,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#resourcerule"><em>ResourceRule</em></a>[]</p>
 <p>The <a class="reference external" href="acp_rule.html#resourcerule">ResourceRule</a>s contained in this Resource’s Access Control Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L418">src/acp/rule.ts:418</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L426">src/acp/rule.ts:426</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1811,6 +1817,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Get the <a class="reference external" href="acp_rule.html#rule">Rule</a> with the given URL from an <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id23">
 <h4>Parameters:<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1833,7 +1840,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a> | <em>null</em></p>
 <p>The requested <a class="reference external" href="acp_rule.html#rule">Rule</a>, if it exists, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it does not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L355">src/acp/rule.ts:355</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L360">src/acp/rule.ts:360</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1846,6 +1853,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Gets the <a class="reference external" href="acp_rule.html#rule">Rule</a>s from a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id24">
 <h4>Parameters:<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1864,7 +1872,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a>[]</p>
 <p>The <a class="reference external" href="acp_rule.html#rule">Rule</a>s contained in this resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L403">src/acp/rule.ts:403</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L410">src/acp/rule.ts:410</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1878,6 +1886,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Check if the rule applies to any client, i.e. all the applications
 regardless of their identifier.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id25">
 <h4>Parameters:<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1896,7 +1905,7 @@ regardless of their identifier.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether the rule applies to public clients.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L933">src/acp/rule.ts:933</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L949">src/acp/rule.ts:949</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1909,6 +1918,7 @@ regardless of their identifier.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Check if the rule applies to any authenticated agent.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id26">
 <h4>Parameters:<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1927,7 +1937,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether the rule applies to any authenticated agent or not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L747">src/acp/rule.ts:747</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L761">src/acp/rule.ts:761</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1940,6 +1950,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Check if the rule applies to the creator of the Resource.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id27">
 <h4>Parameters:<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1958,7 +1969,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether the rule applies to the creator of the Resource or not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L803">src/acp/rule.ts:803</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L818">src/acp/rule.ts:818</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1971,6 +1982,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Check if the rule applies to any agent.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id28">
 <h4>Parameters:<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -1989,7 +2001,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether the rule applies to any agent or not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L692">src/acp/rule.ts:692</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L705">src/acp/rule.ts:705</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2003,7 +2015,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Prevent the <a class="reference external" href="acp_rule.html#rule">Rule</a> from applying to a given agent directly. This will not
 remove the agent from any groups the rule applies to.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id29">
 <h4>Parameters:<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2026,7 +2038,7 @@ remove the agent from any groups the rule applies to.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, not applying to the given agent.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L615">src/acp/rule.ts:615</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L627">src/acp/rule.ts:627</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2041,7 +2053,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Removes a rule that refines the scope of a given the <a class="reference external" href="acp_policy.html#policy">Policy</a>. If an agent
 requesting access to a resource is <strong>not</strong> present in <strong>any</strong> of the “All Of” rules,
 they will not be granted access.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id30">
 <h4>Type parameters:<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2079,7 +2091,7 @@ they will not be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the rule removed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L105">src/acp/rule.ts:105</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L107">src/acp/rule.ts:107</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2092,7 +2104,7 @@ they will not be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Make the <a class="reference external" href="acp_rule.html#rule">Rule</a> no longer apply to any client application.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id32">
 <h4>Parameters:<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2111,7 +2123,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to no longer apply to any client</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L967">src/acp/rule.ts:967</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L983">src/acp/rule.ts:983</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2126,7 +2138,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Removes a rule that extends the scope of a given the <a class="reference external" href="acp_policy.html#policy">Policy</a>. If an agent
 requesting access to a resource is present in <strong>any</strong> of the “Any Of” rules,
 they will be granted access.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id33">
 <h4>Type parameters:<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2164,7 +2176,7 @@ they will be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the rule removed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L184">src/acp/rule.ts:184</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L186">src/acp/rule.ts:186</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2177,7 +2189,7 @@ they will be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Set a Rule to no longer apply to any authenticated Agent.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id35">
 <h4>Parameters:<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2196,7 +2208,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to apply/not apply to any authenticated agent.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L789">src/acp/rule.ts:789</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L803">src/acp/rule.ts:803</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2209,7 +2221,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Prevent the <a class="reference external" href="acp_rule.html#rule">Rule</a> from applying to a given Client directly.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id36">
 <h4>Parameters:<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2232,7 +2244,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, not applying to the given Client.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L918">src/acp/rule.ts:918</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L933">src/acp/rule.ts:933</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2245,7 +2257,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Set a Rule to no longer apply to the creator of a Resource.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id37">
 <h4>Parameters:<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2264,7 +2276,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to apply/not apply to the creator of a Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L844">src/acp/rule.ts:844</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L859">src/acp/rule.ts:859</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2277,7 +2289,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Prevent the <a class="reference external" href="acp_rule.html#rule">Rule</a> from applying to a given group.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id38">
 <h4>Parameters:<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2300,7 +2312,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, not applying to the given group.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L678">src/acp/rule.ts:678</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L690">src/acp/rule.ts:690</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2315,7 +2327,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Removes a rule that restricts the scope of a given the <a class="reference external" href="acp_policy.html#policy">Policy</a>. If an agent
 requesting access to a resource is present in <strong>any</strong> of the forbidden rules,
 they will <strong>not</strong> be granted access.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id39">
 <h4>Type parameters:<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2353,7 +2365,7 @@ they will <strong>not</strong> be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the rule removed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L263">src/acp/rule.ts:263</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L265">src/acp/rule.ts:265</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2366,7 +2378,7 @@ they will <strong>not</strong> be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Set a Rule to no longer apply to any Agent.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id41">
 <h4>Parameters:<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2385,7 +2397,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to no longer apply to any agent.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L733">src/acp/rule.ts:733</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L746">src/acp/rule.ts:746</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2398,6 +2410,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Removes the given <a class="reference external" href="acp_rule.html#resourcerule">ResourceRule</a> from the given Resource’s Access Control Resource.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id42">
 <h4>Type parameters:<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2435,7 +2448,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A new Resource equal to the given Resource, but without the given Rule in its ACR.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L453">src/acp/rule.ts:453</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L463">src/acp/rule.ts:463</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2448,6 +2461,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Removes the given <a class="reference external" href="acp_rule.html#rule">Rule</a> from the given <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id44">
 <h4>Type parameters:<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2485,7 +2499,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> Dataset</p>
 <p>A new SolidDataset equal to the given Rule Resource, but without the given Rule.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L436">src/acp/rule.ts:436</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L445">src/acp/rule.ts:445</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2495,6 +2509,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Gets a human-readable representation of the given <a class="reference external" href="acp_rule.html#rule">Rule</a> to aid debugging.</p>
 <p>Note that changes to the exact format of the return value are not considered a breaking change;
 it is intended to aid in debugging, not as a serialisation method that can be reliably parsed.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id46">
 <h4>Parameters:<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2512,7 +2527,7 @@ it is intended to aid in debugging, not as a serialisation method that can be re
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L979">src/acp/rule.ts:979</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L996">src/acp/rule.ts:996</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2525,7 +2540,7 @@ it is intended to aid in debugging, not as a serialisation method that can be re
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Overwrite the agents the <a class="reference external" href="acp_rule.html#rule">Rule</a> applies to with the provided agents.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id47">
 <h4>Parameters:<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2548,7 +2563,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the input rule, applying to a different set of agents.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L566">src/acp/rule.ts:566</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L578">src/acp/rule.ts:578</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2563,7 +2578,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Overwrites the rule refining the scope of a given the <a class="reference external" href="acp_policy.html#policy">Policy</a>. If an agent
 requesting access to a resource is <strong>not</strong> present in <strong>any</strong> of the “All Of” rules,
 they will not be granted access.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id48">
 <h4>Type parameters:<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2601,7 +2616,7 @@ they will not be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the “All Of” rules replaced.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L125">src/acp/rule.ts:125</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L127">src/acp/rule.ts:127</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2614,7 +2629,7 @@ they will not be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Make the <a class="reference external" href="acp_rule.html#rule">Rule</a> apply to any client application.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id50">
 <h4>Parameters:<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2633,7 +2648,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to apply to any client</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L952">src/acp/rule.ts:952</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L968">src/acp/rule.ts:968</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2648,7 +2663,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Overwrite the rule extending the scope of a given the <a class="reference external" href="acp_policy.html#policy">Policy</a>. If an agent
 requesting access to a resource is present in <strong>any</strong> of the “Any Of” rules,
 they will be granted access.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id51">
 <h4>Type parameters:<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2686,7 +2701,7 @@ they will be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the “Any Of” rules replaced.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L204">src/acp/rule.ts:204</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L206">src/acp/rule.ts:206</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2699,7 +2714,7 @@ they will be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Set a Rule to apply to any authenticated Agent.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id53">
 <h4>Parameters:<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2718,7 +2733,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to apply to any authenticated Agent.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L766">src/acp/rule.ts:766</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L780">src/acp/rule.ts:780</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2731,7 +2746,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Overwrite the clients the <a class="reference external" href="acp_rule.html#rule">Rule</a> applies to with the provided Client.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id54">
 <h4>Parameters:<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2754,7 +2769,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the input rule, applying to a different set of Clients.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L878">src/acp/rule.ts:878</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L893">src/acp/rule.ts:893</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2767,7 +2782,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Set a Rule to apply to the creator of a Resource.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id55">
 <h4>Parameters:<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2786,7 +2801,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to apply to the creator of a Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L821">src/acp/rule.ts:821</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L836">src/acp/rule.ts:836</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2799,7 +2814,7 @@ function is still experimental and subject to change, even in a non-major releas
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Overwrite the groups the <a class="reference external" href="acp_rule.html#rule">Rule</a> applies to with the provided groups.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id56">
 <h4>Parameters:<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2822,7 +2837,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the input rule, applying to a different set of groups.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L646">src/acp/rule.ts:646</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L658">src/acp/rule.ts:658</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2837,7 +2852,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Set the rules restrincting the scope of a given the <a class="reference external" href="acp_policy.html#policy">Policy</a>. If an agent
 requesting access to a resource is present in <strong>any</strong> of the “None Of” rules,
 they will not be granted access.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id57">
 <h4>Type parameters:<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2875,7 +2890,7 @@ they will not be granted access.</p>
 </table>
 <p><strong>Returns:</strong> P</p>
 <p>A new <a class="reference external" href="acp_policy.html#policy">Policy</a> clone of the original one, with the “Any Of” rules replaced.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L283">src/acp/rule.ts:283</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L285">src/acp/rule.ts:285</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2888,7 +2903,7 @@ they will not be granted access.</p>
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Set a Rule to apply to any Agent.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> Unreleased</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">status</span></code></strong> 1.6.0</p>
 <div class="section" id="id59">
 <h4>Parameters:<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2907,7 +2922,7 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_rule.html#rule"><em>Rule</em></a></p>
 <p>A copy of the rule, updated to apply to any agent.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L710">src/acp/rule.ts:710</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L723">src/acp/rule.ts:723</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2921,6 +2936,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Insert the given <a class="reference external" href="acp_rule.html#resourcerule">ResourceRule</a> into the given Resource’s Access Control Resource,
 replacing previous instances of that Rule.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id60">
 <h4>Type parameters:<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -2958,7 +2974,7 @@ replacing previous instances of that Rule.</p>
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A new Resource equal to the given Resource, but with the given Rule in its ACR.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L522">src/acp/rule.ts:522</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L534">src/acp/rule.ts:534</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -2972,6 +2988,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Insert the given <a class="reference external" href="acp_rule.html#rule">Rule</a> into the given <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>, replacing previous
 instances of that Rule.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
 <div class="section" id="id62">
 <h4>Type parameters:<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -3009,7 +3026,7 @@ instances of that Rule.</p>
 </table>
 <p><strong>Returns:</strong> Dataset</p>
 <p>A new SolidDataset equal to the given Rule Resource, but with the given Rule.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a48efa9/src/acp/rule.ts#L504">src/acp/rule.ts:504</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/96620a3/src/acp/rule.ts#L515">src/acp/rule.ts:515</a></p>
 </div>
 </div>
 </div>
