@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Module: acl/class &#8212; Inrupt solid-client API Documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -473,11 +474,11 @@
               <div>
                 
   <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / acl/class</p>
-<div class="section" id="module-acl-class">
+<section id="module-acl-class">
 <h1>Module: acl/class<a class="headerlink" href="#module-acl-class" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="table-of-contents">
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="functions">
+<section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="acl_class.html#getpublicaccess">getPublicAccess</a></p></li>
@@ -486,11 +487,11 @@
 <li><p><a class="reference external" href="acl_class.html#setpublicdefaultaccess">setPublicDefaultAccess</a></p></li>
 <li><p><a class="reference external" href="acl_class.html#setpublicresourceaccess">setPublicResourceAccess</a></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="id1">
+</section>
+</section>
+<section id="id1">
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="getpublicaccess">
+<section id="getpublicaccess">
 <h3>getPublicAccess<a class="headerlink" href="#getpublicaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getPublicAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceInfo</span></code>: WithAcl &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <a class="reference external" href="acl_acl.html#access"><em>Access</em></a> | <em>null</em></p>
 <div class="admonition note">
@@ -500,7 +501,7 @@
 <p>Returns the Access Modes granted to the public in general for a Resource.</p>
 <p>This function does not return Access Modes granted to specific Agents
 through other ACL (Access Control List) rules, e.g., agent- or group-specific permissions.</p>
-<div class="section" id="parameters">
+<section id="parameters">
 <h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -518,11 +519,11 @@ through other ACL (Access Control List) rules, e.g., agent- or group-specific pe
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#access"><em>Access</em></a> | <em>null</em></p>
 <p>Access Modes granted to the public in general for the Resource, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it could not be determined (e.g. because the current user does not have Control Access to a given Resource or its Container).</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2fba369/src/acl/class.ts#L65">src/acl/class.ts:65</a></p>
-</div>
-</div>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/443ad73/src/acl/class.ts#L65">src/acl/class.ts:65</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getpublicdefaultaccess">
+<section id="getpublicdefaultaccess">
 <h3>getPublicDefaultAccess<a class="headerlink" href="#getpublicdefaultaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getPublicDefaultAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>): <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <div class="admonition note">
@@ -536,7 +537,7 @@ of the Container associated with an ACL (Access Control List).</p>
 <li><p>Access Modes granted to Agents through other ACL rules, e.g., agent- or group-specific permissions.</p></li>
 <li><p>Access Modes to the Container Resource itself (see <a class="reference external" href="acl_class.html#getpublicresourceaccess">getPublicResourceAccess</a> instead).</p></li>
 </ul>
-<div class="section" id="id2">
+<section id="id2">
 <h4>Parameters:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -554,11 +555,11 @@ of the Container associated with an ACL (Access Control List).</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <p>Access Modes granted to the public in general for the children of the Container associated with the given <code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2fba369/src/acl/class.ts#L121">src/acl/class.ts:121</a></p>
-</div>
-</div>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/443ad73/src/acl/class.ts#L121">src/acl/class.ts:121</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getpublicresourceaccess">
+<section id="getpublicresourceaccess">
 <h3>getPublicResourceAccess<a class="headerlink" href="#getpublicresourceaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getPublicResourceAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>): <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <div class="admonition note">
@@ -572,7 +573,7 @@ associated with an ACL (Access Control List).</p>
 <li><p>Access Modes granted to specific Agents through other ACL rules, e.g., agent- or group-specific permissions.</p></li>
 <li><p>Access Modes to child Resources if the associated Resource is a Container (see <a class="reference external" href="acl_class.html#getpublicdefaultaccess">getPublicDefaultAccess</a> instead).</p></li>
 </ul>
-<div class="section" id="id3">
+<section id="id3">
 <h4>Parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -590,11 +591,11 @@ associated with an ACL (Access Control List).</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <p>Access Modes granted to the public in general for the Resource associated with the <code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2fba369/src/acl/class.ts#L92">src/acl/class.ts:92</a></p>
-</div>
-</div>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/443ad73/src/acl/class.ts#L92">src/acl/class.ts:92</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="setpublicdefaultaccess">
+<section id="setpublicdefaultaccess">
 <h3>setPublicDefaultAccess<a class="headerlink" href="#setpublicdefaultaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>setPublicDefaultAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>, <code class="docutils literal notranslate"><span class="pre">access</span></code>: <a class="reference external" href="acl_acl.html#access"><em>Access</em></a>): <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <div class="admonition note">
@@ -612,7 +613,7 @@ they are replaced by the new rules.</p>
 <li><p>Access Modes to Container Resource itself.</p></li>
 <li><p>The original ACL.</p></li>
 </ul>
-<div class="section" id="id4">
+<section id="id4">
 <h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -634,11 +635,11 @@ they are replaced by the new rules.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <p>A new default ACL initialised with the given <code class="docutils literal notranslate"><span class="pre">aclDataset</span></code> and public <code class="docutils literal notranslate"><span class="pre">access</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2fba369/src/acl/class.ts#L190">src/acl/class.ts:190</a></p>
-</div>
-</div>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/443ad73/src/acl/class.ts#L190">src/acl/class.ts:190</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="setpublicresourceaccess">
+<section id="setpublicresourceaccess">
 <h3>setPublicResourceAccess<a class="headerlink" href="#setpublicresourceaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>setPublicResourceAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>, <code class="docutils literal notranslate"><span class="pre">access</span></code>: <a class="reference external" href="acl_acl.html#access"><em>Access</em></a>): <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <div class="admonition note">
@@ -656,7 +657,7 @@ they are replaced by the new rules.</p>
 <li><p>Access Modes to child Resources if the associated Resource is a Container.</p></li>
 <li><p>The original ACL.</p></li>
 </ul>
-<div class="section" id="id5">
+<section id="id5">
 <h4>Parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -678,11 +679,11 @@ they are replaced by the new rules.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <p>A new resource ACL initialised with the given <code class="docutils literal notranslate"><span class="pre">aclDataset</span></code> and public <code class="docutils literal notranslate"><span class="pre">access</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2fba369/src/acl/class.ts#L156">src/acl/class.ts:156</a></p>
-</div>
-</div>
-</div>
-</div>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/443ad73/src/acl/class.ts#L156">src/acl/class.ts:156</a></p>
+</section>
+</section>
+</section>
+</section>
 
 
               </div>
