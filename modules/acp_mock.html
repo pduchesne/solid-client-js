@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module: acp/mock &#8212; Inrupt solid-client API Documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -443,21 +442,21 @@
               <div>
                 
   <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / acp/mock</p>
-<section id="module-acp-mock">
+<div class="section" id="module-acp-mock">
 <h1>Module: acp/mock<a class="headerlink" href="#module-acp-mock" title="Permalink to this headline">¶</a></h1>
-<section id="table-of-contents">
+<div class="section" id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<section id="functions">
+<div class="section" id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="acp_mock.html#addmockacrto">addMockAcrTo</a></p></li>
 <li><p><a class="reference external" href="acp_mock.html#mockacrfor">mockAcrFor</a></p></li>
 </ul>
-</section>
-</section>
-<section id="id1">
+</div>
+</div>
+<div class="section" id="id1">
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<section id="addmockacrto">
+<div class="section" id="addmockacrto">
 <h3>addMockAcrTo<a class="headerlink" href="#addmockacrto" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>addMockAcrTo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: T, <code class="docutils literal notranslate"><span class="pre">accessControlResource?</span></code>: <a class="reference external" href="acp_control.html#accesscontrolresource"><em>AccessControlResource</em></a>): T &amp; <a class="reference external" href="acp_acp.html#withaccessibleacr"><em>WithAccessibleAcr</em></a></p>
 <div class="admonition warning">
@@ -468,7 +467,7 @@ Resource with an <a class="reference external" href="acp_control.html#accesscont
 <p>Attaches an Access Control Resource to a given <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> for use
 in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference external" href="acp_control.html#getpolicyurlall">getPolicyUrlAll</a>.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="type-parameters">
+<div class="section" id="type-parameters">
 <h4>Type parameters:<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -482,8 +481,8 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 </tr>
 </tbody>
 </table>
-</section>
-<section id="parameters">
+</div>
+<div class="section" id="parameters">
 <h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -505,11 +504,11 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 </table>
 <p><strong>Returns:</strong> T &amp; <a class="reference external" href="acp_acp.html#withaccessibleacr"><em>WithAccessibleAcr</em></a></p>
 <p>The input Resource with an empty resource ACL attached.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/mock.ts#L67">src/acp/mock.ts:67</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/mock.ts#L67">src/acp/mock.ts:67</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="mockacrfor">
+<div class="section" id="mockacrfor">
 <h3>mockAcrFor<a class="headerlink" href="#mockacrfor" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>mockAcrFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <a class="reference external" href="acp_control.html#accesscontrolresource"><em>AccessControlResource</em></a></p>
 <div class="admonition warning">
@@ -520,7 +519,7 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 <p>Initialises a new empty Access Control Resource for a given Resource for use
 in <strong>unit tests</strong>.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id2">
+<div class="section" id="id2">
 <h4>Parameters:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -538,11 +537,11 @@ in <strong>unit tests</strong>.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acp_control.html#accesscontrolresource"><em>AccessControlResource</em></a></p>
 <p>The mocked empty Access Control Resource for the given Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/mock.ts#L43">src/acp/mock.ts:43</a></p>
-</section>
-</section>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/mock.ts#L43">src/acp/mock.ts:43</a></p>
+</div>
+</div>
+</div>
+</div>
 
 
               </div>

@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module: acl/agent &#8212; Inrupt solid-client API Documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -527,17 +526,17 @@
               <div>
                 
   <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / acl/agent</p>
-<section id="module-acl-agent">
+<div class="section" id="module-acl-agent">
 <h1>Module: acl/agent<a class="headerlink" href="#module-acl-agent" title="Permalink to this headline">¶</a></h1>
-<section id="table-of-contents">
+<div class="section" id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<section id="type-aliases">
+<div class="section" id="type-aliases">
 <h3>Type aliases<a class="headerlink" href="#type-aliases" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="acl_agent.html#agentaccess">AgentAccess</a></p></li>
 </ul>
-</section>
-<section id="functions">
+</div>
+<div class="section" id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="acl_agent.html#getagentaccess">getAgentAccess</a></p></li>
@@ -549,11 +548,11 @@
 <li><p><a class="reference external" href="acl_agent.html#setagentdefaultaccess">setAgentDefaultAccess</a></p></li>
 <li><p><a class="reference external" href="acl_agent.html#setagentresourceaccess">setAgentResourceAccess</a></p></li>
 </ul>
-</section>
-</section>
-<section id="id1">
+</div>
+</div>
+<div class="section" id="id1">
 <h2>Type aliases<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<section id="agentaccess">
+<div class="section" id="agentaccess">
 <h3>AgentAccess<a class="headerlink" href="#agentaccess" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>AgentAccess</strong>: <em>Record</em>&lt;<a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>, <a class="reference external" href="acl_acl.html#access"><em>Access</em></a>&gt;</p>
 <div class="admonition note">
@@ -561,12 +560,12 @@
 <p>The Web Access Control specification is not yet finalised. As such, this
 function is still experimental and subject to change, even in a non-major release.</p>
 </div>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L62">src/acl/agent.ts:62</a></p>
-</section>
-</section>
-<section id="id2">
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L62">src/acl/agent.ts:62</a></p>
+</div>
+</div>
+<div class="section" id="id2">
 <h2>Functions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<section id="getagentaccess">
+<div class="section" id="getagentaccess">
 <h3>getAgentAccess<a class="headerlink" href="#getagentaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getAgentAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceInfo</span></code>: WithAcl &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>, <code class="docutils literal notranslate"><span class="pre">agent</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>): <a class="reference external" href="acl_acl.html#access"><em>Access</em></a> | <em>null</em></p>
 <div class="admonition note">
@@ -576,7 +575,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Returns an Agent’s explicitly-granted Access Modes for the given Resource.</p>
 <p>The function does not return Access Modes granted indirectly to the Agent through other
 ACL rules, e.g., public or group-specific permissions.</p>
-<section id="parameters">
+<div class="section" id="parameters">
 <h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -598,11 +597,11 @@ ACL rules, e.g., public or group-specific permissions.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#access"><em>Access</em></a> | <em>null</em></p>
 <p>Access Modes that have been explicitly granted to the Agent for the given Resource, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it could not be determined (e.g. because the current user does not have Control access to a given Resource or its Container).</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L78">src/acl/agent.ts:78</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L78">src/acl/agent.ts:78</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getagentaccessall">
+<div class="section" id="getagentaccessall">
 <h3>getAgentAccessAll<a class="headerlink" href="#getagentaccessall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getAgentAccessAll</strong>(<code class="docutils literal notranslate"><span class="pre">resourceInfo</span></code>: WithAcl &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <a class="reference external" href="acl_agent.html#agentaccess"><em>AgentAccess</em></a> | <em>null</em></p>
 <div class="admonition note">
@@ -612,7 +611,7 @@ ACL rules, e.g., public or group-specific permissions.</p>
 <p>Returns all explicitly-granted Access Modes per Agent for the given Resource.</p>
 <p>The function does not return Access Modes granted indirectly to Agents through other
 ACL rules, e.g., public or group-specific permissions.</p>
-<section id="id3">
+<div class="section" id="id3">
 <h4>Parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -630,11 +629,11 @@ ACL rules, e.g., public or group-specific permissions.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_agent.html#agentaccess"><em>AgentAccess</em></a> | <em>null</em></p>
 <p>Access Modes per Agent that have been explicitly granted for the given Resource, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it could not be determined (e.g. because the current user does not have Control access to a given Resource or its Container).</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L103">src/acl/agent.ts:103</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L103">src/acl/agent.ts:103</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getagentdefaultaccess">
+<div class="section" id="getagentdefaultaccess">
 <h3>getAgentDefaultAccess<a class="headerlink" href="#getagentdefaultaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getAgentDefaultAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>, <code class="docutils literal notranslate"><span class="pre">agent</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>): <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <div class="admonition note">
@@ -648,7 +647,7 @@ Container associated with the given ACL (Access Control List).</p>
 <li><p>Access Modes granted indirectly to the Agent through other ACL rules, e.g. public or group-specific permissions.</p></li>
 <li><p>Access Modes granted to the Agent for the Container Resource itself (see <a class="reference external" href="acl_agent.html#getagentresourceaccess">getAgentResourceAccess</a> instead).</p></li>
 </ul>
-<section id="id4">
+<div class="section" id="id4">
 <h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -670,11 +669,11 @@ Container associated with the given ACL (Access Control List).</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <p>Access Modes that have been explicitly granted to an Agent for the children of the Container associated with the given ACL.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L226">src/acl/agent.ts:226</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L226">src/acl/agent.ts:226</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getagentdefaultaccessall">
+<div class="section" id="getagentdefaultaccessall">
 <h3>getAgentDefaultAccessAll<a class="headerlink" href="#getagentdefaultaccessall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getAgentDefaultAccessAll</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>): <a class="reference external" href="acl_agent.html#agentaccess"><em>AgentAccess</em></a></p>
 <div class="admonition note">
@@ -688,7 +687,7 @@ of the Container associated with the given ACL (Access Control List).</p>
 <li><p>Access Modes granted indirectly to the Agents through other ACL rules, e.g. public or group-specific permissions.</p></li>
 <li><p>Access Modes granted to the Agents for the Container Resource itself (see <a class="reference external" href="acl_agent.html#getagentresourceaccessall">getAgentResourceAccessAll</a> instead).</p></li>
 </ul>
-<section id="id5">
+<div class="section" id="id5">
 <h4>Parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -706,11 +705,11 @@ of the Container associated with the given ACL (Access Control List).</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_agent.html#agentaccess"><em>AgentAccess</em></a></p>
 <p>Access Modes, per Agent, that have been explicitly granted for the children of the Container associated with the given ACL.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L256">src/acl/agent.ts:256</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L256">src/acl/agent.ts:256</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getagentresourceaccess">
+<div class="section" id="getagentresourceaccess">
 <h3>getAgentResourceAccess<a class="headerlink" href="#getagentresourceaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getAgentResourceAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>, <code class="docutils literal notranslate"><span class="pre">agent</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>): <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <div class="admonition note">
@@ -724,7 +723,7 @@ associated with an ACL (Access ControlList).</p>
 <li><p>Access Modes granted indirectly to the Agent through other ACL rules, e.g., public or group-specific permissions.</p></li>
 <li><p>Access Modes granted to the Agent for the child Resources if the associated Resource is a Container (see <a class="reference external" href="acl_agent.html#getagentdefaultaccess">getAgentDefaultAccess</a> instead).</p></li>
 </ul>
-<section id="id6">
+<div class="section" id="id6">
 <h4>Parameters:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -746,11 +745,11 @@ associated with an ACL (Access ControlList).</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#access"><em>Access</em></a></p>
 <p>Access Modes that have been explicitly granted to an Agent for the Resource associated with an ACL SolidDataset.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L134">src/acl/agent.ts:134</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L134">src/acl/agent.ts:134</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getagentresourceaccessall">
+<div class="section" id="getagentresourceaccessall">
 <h3>getAgentResourceAccessAll<a class="headerlink" href="#getagentresourceaccessall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getAgentResourceAccessAll</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>): <a class="reference external" href="acl_agent.html#agentaccess"><em>AgentAccess</em></a></p>
 <div class="admonition note">
@@ -764,7 +763,7 @@ with an ACL (Access Control List).</p>
 <li><p>Access Modes granted indirectly to Agents through other ACL rules, e.g., public or group-specific permissions.</p></li>
 <li><p>Access Modes granted to Agents for the child Resources if the associated Resource is a Container.</p></li>
 </ul>
-<section id="id7">
+<div class="section" id="id7">
 <h4>Parameters:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -782,11 +781,11 @@ with an ACL (Access Control List).</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_agent.html#agentaccess"><em>AgentAccess</em></a></p>
 <p>Access Modes per Agent that have been explicitly granted for the Resource associated with an ACL SolidDataset.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L164">src/acl/agent.ts:164</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L164">src/acl/agent.ts:164</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="setagentdefaultaccess">
+<div class="section" id="setagentdefaultaccess">
 <h3>setAgentDefaultAccess<a class="headerlink" href="#setagentdefaultaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>setAgentDefaultAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>, <code class="docutils literal notranslate"><span class="pre">agent</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>, <code class="docutils literal notranslate"><span class="pre">access</span></code>: <a class="reference external" href="acl_acl.html#access"><em>Access</em></a>): <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <div class="admonition note">
@@ -803,7 +802,7 @@ new rules for the Agent’s access.</p>
 <li><p>Access Modes granted to the Agent for the Container Resource itself.</p></li>
 <li><p>The original ACL.</p></li>
 </ul>
-<section id="id8">
+<div class="section" id="id8">
 <h4>Parameters:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -829,11 +828,11 @@ new rules for the Agent’s access.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <p>A new default ACL initialised with the given <code class="docutils literal notranslate"><span class="pre">aclDataset</span></code> and <code class="docutils literal notranslate"><span class="pre">access</span></code> for the <code class="docutils literal notranslate"><span class="pre">agent</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L288">src/acl/agent.ts:288</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L288">src/acl/agent.ts:288</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="setagentresourceaccess">
+<div class="section" id="setagentresourceaccess">
 <h3>setAgentResourceAccess<a class="headerlink" href="#setagentresourceaccess" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>setAgentResourceAccess</strong>(<code class="docutils literal notranslate"><span class="pre">aclDataset</span></code>: <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a>, <code class="docutils literal notranslate"><span class="pre">agent</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>, <code class="docutils literal notranslate"><span class="pre">access</span></code>: <a class="reference external" href="acl_acl.html#access"><em>Access</em></a>): <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <div class="admonition note">
@@ -851,7 +850,7 @@ they are replaced by the new rules.</p>
 <li><p>Access Modes granted to Agents for the child Resources if the associated Resource is a Container.</p></li>
 <li><p>The original ACL.</p></li>
 </ul>
-<section id="id9">
+<div class="section" id="id9">
 <h4>Parameters:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -877,11 +876,11 @@ they are replaced by the new rules.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="acl_acl.html#acldataset"><em>AclDataset</em></a> &amp; WithChangeLog</p>
 <p>A new resource ACL initialised with the given <code class="docutils literal notranslate"><span class="pre">aclDataset</span></code> and <code class="docutils literal notranslate"><span class="pre">access</span></code> for the <code class="docutils literal notranslate"><span class="pre">agent</span></code>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acl/agent.ts#L196">src/acl/agent.ts:196</a></p>
-</section>
-</section>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acl/agent.ts#L196">src/acl/agent.ts:196</a></p>
+</div>
+</div>
+</div>
+</div>
 
 
               </div>

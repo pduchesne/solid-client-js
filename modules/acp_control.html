@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module: acp/control &#8212; Inrupt solid-client API Documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -749,19 +748,19 @@
               <div>
                 
   <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / acp/control</p>
-<section id="module-acp-control">
+<div class="section" id="module-acp-control">
 <h1>Module: acp/control<a class="headerlink" href="#module-acp-control" title="Permalink to this headline">¶</a></h1>
-<section id="table-of-contents">
+<div class="section" id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<section id="type-aliases">
+<div class="section" id="type-aliases">
 <h3>Type aliases<a class="headerlink" href="#type-aliases" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a></p></li>
 <li><p><a class="reference external" href="acp_control.html#control">Control</a></p></li>
 <li><p><a class="reference external" href="acp_control.html#withlinkedacr">WithLinkedAcr</a></p></li>
 </ul>
-</section>
-<section id="functions">
+</div>
+<div class="section" id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="acp_control.html#acrasmarkdown">acrAsMarkdown</a></p></li>
@@ -783,11 +782,11 @@
 <li><p><a class="reference external" href="acp_control.html#removepolicyurl">removePolicyUrl</a></p></li>
 <li><p><a class="reference external" href="acp_control.html#removepolicyurlall">removePolicyUrlAll</a></p></li>
 </ul>
-</section>
-</section>
-<section id="id1">
+</div>
+</div>
+<div class="section" id="id1">
 <h2>Type aliases<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<section id="accesscontrolresource">
+<div class="section" id="accesscontrolresource">
 <h3>AccessControlResource<a class="headerlink" href="#accesscontrolresource" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>AccessControlResource</strong>: <a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a> &amp; { <code class="docutils literal notranslate"><span class="pre">accessTo</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>  }</p>
 <div class="admonition note">
@@ -798,10 +797,10 @@ function is still experimental and subject to change, even in a non-major releas
 <p>An Access Control Resource, containing <a class="reference external" href="acp_control.html#control">Control</a>s specifying which <a class="reference external" href="acp_policy.html#policy">Policy</a>’s
 apply to the Resource this Access Control Resource is linked to.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L98">src/acp/control.ts:98</a></p>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L98">src/acp/control.ts:98</a></p>
+</div>
 <hr class="docutils" />
-<section id="control">
+<div class="section" id="control">
 <h3>Control<a class="headerlink" href="#control" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>Control</strong>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p>
 <div class="admonition note">
@@ -812,10 +811,10 @@ function is still experimental and subject to change, even in a non-major releas
 <p>A Control, usually contained in an <a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a>. It describes which
 <a class="reference external" href="acp_policy.html#policy">Policy</a>’s apply to a Resource.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L110">src/acp/control.ts:110</a></p>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L110">src/acp/control.ts:110</a></p>
+</div>
 <hr class="docutils" />
-<section id="withlinkedacr">
+<div class="section" id="withlinkedacr">
 <h3>WithLinkedAcr<a class="headerlink" href="#withlinkedacr" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>WithLinkedAcr</strong>&lt;Resource&gt;: Resource &amp; { <code class="docutils literal notranslate"><span class="pre">internal_resourceInfo</span></code>: { <code class="docutils literal notranslate"><span class="pre">linkedResources</span></code>: { <code class="docutils literal notranslate"><span class="pre">http://www.w3.org/ns/solid/acp#accessControl</span></code>: [<em>string</em>]  }  }  }</p>
 <div class="admonition note">
@@ -828,7 +827,7 @@ and thus not the Web Access Control spec.
 It does not indicate that this Access Control Resource will also be accessible to the current
 user.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="type-parameters">
+<div class="section" id="type-parameters">
 <h4>Type parameters:<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -844,20 +843,20 @@ user.</p>
 </tr>
 </tbody>
 </table>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L123">src/acp/control.ts:123</a></p>
-</section>
-</section>
-</section>
-<section id="id2">
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L123">src/acp/control.ts:123</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
 <h2>Functions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<section id="acrasmarkdown">
+<div class="section" id="acrasmarkdown">
 <h3>acrAsMarkdown<a class="headerlink" href="#acrasmarkdown" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>acrAsMarkdown</strong>(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a> &amp; <a class="reference external" href="acp_acp.html#withaccessibleacr"><em>WithAccessibleAcr</em></a>): <em>string</em></p>
 <p>Gets a human-readable representation of the given <a class="reference external" href="acp_control.html#control">Control</a> to aid debugging.</p>
 <p>Note that changes to the exact format of the return value are not considered a breaking change;
 it is intended to aid in debugging, not as a serialisation method that can be reliably parsed.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="parameters">
+<div class="section" id="parameters">
 <h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -874,11 +873,11 @@ it is intended to aid in debugging, not as a serialisation method that can be re
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L561">src/acp/control.ts:561</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L561">src/acp/control.ts:561</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="addacrpolicyurl">
+<div class="section" id="addacrpolicyurl">
 <h3>addAcrPolicyUrl<a class="headerlink" href="#addacrpolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>addAcrPolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -889,7 +888,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Add a <a class="reference external" href="acp_policy.html#policy">Policy</a> to an Access Control Resource such that that <a class="reference external" href="acp_policy.html#policy">Policy</a> applies to the Access
 Control Resource itself, rather than the Resource it governs.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id3">
+<div class="section" id="id3">
 <h4>Type parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -903,8 +902,8 @@ Control Resource itself, rather than the Resource it governs.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id4">
+</div>
+<div class="section" id="id4">
 <h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -926,11 +925,11 @@ Control Resource itself, rather than the Resource it governs.</p>
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but with the given ACR Policy added to it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L146">src/acp/control.ts:146</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L146">src/acp/control.ts:146</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="addmemberacrpolicyurl">
+<div class="section" id="addmemberacrpolicyurl">
 <h3>addMemberAcrPolicyUrl<a class="headerlink" href="#addmemberacrpolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>addMemberAcrPolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -941,7 +940,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Add a <a class="reference external" href="acp_policy.html#policy">Policy</a> to a Resource’s Access Control Resource such that that
 Policy applies to the Access Control Resources of child Resources.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id5">
+<div class="section" id="id5">
 <h4>Type parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -955,8 +954,8 @@ Policy applies to the Access Control Resources of child Resources.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id6">
+</div>
+<div class="section" id="id6">
 <h4>Parameters:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -978,11 +977,11 @@ Policy applies to the Access Control Resources of child Resources.</p>
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but with the given ACR Policy added to it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L174">src/acp/control.ts:174</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L174">src/acp/control.ts:174</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="addmemberpolicyurl">
+<div class="section" id="addmemberpolicyurl">
 <h3>addMemberPolicyUrl<a class="headerlink" href="#addmemberpolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>addMemberPolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -993,7 +992,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Add a <a class="reference external" href="acp_policy.html#policy">Policy</a> to a Resource’s Access Control Resource such that that
 Policy applies to that Resource’s children.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id7">
+<div class="section" id="id7">
 <h4>Type parameters:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1007,8 +1006,8 @@ Policy applies to that Resource’s children.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id8">
+</div>
+<div class="section" id="id8">
 <h4>Parameters:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1030,11 +1029,11 @@ Policy applies to that Resource’s children.</p>
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A new Resource equal to the given Resource, but with the given Member Policy added to its Access Control Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L388">src/acp/control.ts:388</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L388">src/acp/control.ts:388</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="addpolicyurl">
+<div class="section" id="addpolicyurl">
 <h3>addPolicyUrl<a class="headerlink" href="#addpolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>addPolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -1044,7 +1043,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Add a <a class="reference external" href="acp_policy.html#policy">Policy</a> to an Access Control Resource such that that <a class="reference external" href="acp_policy.html#policy">Policy</a> applies to that Resource.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id9">
+<div class="section" id="id9">
 <h4>Type parameters:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1058,8 +1057,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id10">
+</div>
+<div class="section" id="id10">
 <h4>Parameters:<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1081,11 +1080,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but with the given Policy added to it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L365">src/acp/control.ts:365</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L365">src/acp/control.ts:365</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getacrpolicyurlall">
+<div class="section" id="getacrpolicyurlall">
 <h3>getAcrPolicyUrlAll<a class="headerlink" href="#getacrpolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getAcrPolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <div class="admonition note">
@@ -1096,7 +1095,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Get the URLs of the Access Policies that apply to an Access Control Resource itself, rather than
 to the Resource it governs.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id11">
+<div class="section" id="id11">
 <h4>Type parameters:<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1110,8 +1109,8 @@ to the Resource it governs.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id12">
+</div>
+<div class="section" id="id12">
 <h4>Parameters:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1129,11 +1128,11 @@ to the Resource it governs.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>URLs of the Policies that govern access to the given Access Control Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L201">src/acp/control.ts:201</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L201">src/acp/control.ts:201</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getmemberacrpolicyurlall">
+<div class="section" id="getmemberacrpolicyurlall">
 <h3>getMemberAcrPolicyUrlAll<a class="headerlink" href="#getmemberacrpolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getMemberAcrPolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <div class="admonition note">
@@ -1144,7 +1143,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Get the URLs of the Access Policies that apply to the Access Control Resources of the Resource’s
 children.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id13">
+<div class="section" id="id13">
 <h4>Type parameters:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1158,8 +1157,8 @@ children.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id14">
+</div>
+<div class="section" id="id14">
 <h4>Parameters:<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1177,11 +1176,11 @@ children.</p>
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>URLs of the Policies that govern access to the Access Control Resources of the given Resource’s children.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L226">src/acp/control.ts:226</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L226">src/acp/control.ts:226</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getmemberpolicyurlall">
+<div class="section" id="getmemberpolicyurlall">
 <h3>getMemberPolicyUrlAll<a class="headerlink" href="#getmemberpolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getMemberPolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <div class="admonition note">
@@ -1191,7 +1190,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Get the URLs of the Access Policies that apply to a Resource’s children.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id15">
+<div class="section" id="id15">
 <h4>Type parameters:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1205,8 +1204,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id16">
+</div>
+<div class="section" id="id16">
 <h4>Parameters:<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1224,11 +1223,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>URLs of the Policies that govern access to the given Resource’s children.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L434">src/acp/control.ts:434</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L434">src/acp/control.ts:434</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="getpolicyurlall">
+<div class="section" id="getpolicyurlall">
 <h3>getPolicyUrlAll<a class="headerlink" href="#getpolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getPolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <div class="admonition note">
@@ -1238,7 +1237,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Get the URLs of the Access Policies that apply to a Resource.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id17">
+<div class="section" id="id17">
 <h4>Type parameters:<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1252,8 +1251,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id18">
+</div>
+<div class="section" id="id18">
 <h4>Parameters:<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1271,11 +1270,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>URLs of the Policies that govern access to the given Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L409">src/acp/control.ts:409</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L409">src/acp/control.ts:409</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="haslinkedacr">
+<div class="section" id="haslinkedacr">
 <h3>hasLinkedAcr<a class="headerlink" href="#haslinkedacr" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>hasLinkedAcr</strong>&lt;Resource&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: Resource): resource is WithLinkedAcr&lt;Resource&gt;</p>
 <div class="admonition note">
@@ -1288,7 +1287,7 @@ function is still experimental and subject to change, even in a non-major releas
 Control Resource, and expose that to users who are allowed to see or modify access to the given
 Resource.)</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id19">
+<div class="section" id="id19">
 <h4>Type parameters:<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1302,8 +1301,8 @@ Resource.)</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id20">
+</div>
+<div class="section" id="id20">
 <h4>Parameters:<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1321,11 +1320,11 @@ Resource.)</p>
 </table>
 <p><strong>Returns:</strong> resource is WithLinkedAcr&lt;Resource&gt;</p>
 <p>True if the Resource refers to an Access Control Resource and is hence governed by Access Policies, or false if it does not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L76">src/acp/control.ts:76</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L76">src/acp/control.ts:76</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removeacrpolicyurl">
+<div class="section" id="removeacrpolicyurl">
 <h3>removeAcrPolicyUrl<a class="headerlink" href="#removeacrpolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removeAcrPolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -1335,7 +1334,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Stop the URL of a given <a class="reference external" href="acp_policy.html#policy">Policy</a> from applying to an Access Control Resource itself.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id21">
+<div class="section" id="id21">
 <h4>Type parameters:<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1349,8 +1348,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id22">
+</div>
+<div class="section" id="id22">
 <h4>Parameters:<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1372,11 +1371,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but with the given ACR Policy removed from it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L251">src/acp/control.ts:251</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L251">src/acp/control.ts:251</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removeacrpolicyurlall">
+<div class="section" id="removeacrpolicyurlall">
 <h3>removeAcrPolicyUrlAll<a class="headerlink" href="#removeacrpolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removeAcrPolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): ResourceExt</p>
 <div class="admonition note">
@@ -1386,7 +1385,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Stop all URL of Access Policies from applying to an Access Control Resource itself.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id23">
+<div class="section" id="id23">
 <h4>Type parameters:<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1400,8 +1399,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id24">
+</div>
+<div class="section" id="id24">
 <h4>Parameters:<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1419,11 +1418,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but without any Policy applying to it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L309">src/acp/control.ts:309</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L309">src/acp/control.ts:309</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removememberacrpolicyurl">
+<div class="section" id="removememberacrpolicyurl">
 <h3>removeMemberAcrPolicyUrl<a class="headerlink" href="#removememberacrpolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removeMemberAcrPolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -1434,7 +1433,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Stop the URL of a given <a class="reference external" href="acp_policy.html#policy">Policy</a> from applying to the Access Control Resources of the
 Resource’s children.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id25">
+<div class="section" id="id25">
 <h4>Type parameters:<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1448,8 +1447,8 @@ Resource’s children.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id26">
+</div>
+<div class="section" id="id26">
 <h4>Parameters:<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1471,11 +1470,11 @@ Resource’s children.</p>
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but with the given member ACR Policy removed from it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L281">src/acp/control.ts:281</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L281">src/acp/control.ts:281</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removememberacrpolicyurlall">
+<div class="section" id="removememberacrpolicyurlall">
 <h3>removeMemberAcrPolicyUrlAll<a class="headerlink" href="#removememberacrpolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removeMemberAcrPolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): ResourceExt</p>
 <div class="admonition note">
@@ -1486,7 +1485,7 @@ function is still experimental and subject to change, even in a non-major releas
 <p>Stop all URL of Access Policies from applying to the Access Control Resources of the Resource’s
 children.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id27">
+<div class="section" id="id27">
 <h4>Type parameters:<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1500,8 +1499,8 @@ children.</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id28">
+</div>
+<div class="section" id="id28">
 <h4>Parameters:<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1519,11 +1518,11 @@ children.</p>
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but without any Policy applying to its children’s ACRs.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L337">src/acp/control.ts:337</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L337">src/acp/control.ts:337</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removememberpolicyurl">
+<div class="section" id="removememberpolicyurl">
 <h3>removeMemberPolicyUrl<a class="headerlink" href="#removememberpolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removeMemberPolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -1533,7 +1532,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Stop the URL of a given <a class="reference external" href="acp_policy.html#policy">Policy</a> from applying to the Resource’s children.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id29">
+<div class="section" id="id29">
 <h4>Type parameters:<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1547,8 +1546,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id30">
+</div>
+<div class="section" id="id30">
 <h4>Parameters:<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1570,11 +1569,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but with the given Member Policy removed from it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L487">src/acp/control.ts:487</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L487">src/acp/control.ts:487</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removememberpolicyurlall">
+<div class="section" id="removememberpolicyurlall">
 <h3>removeMemberPolicyUrlAll<a class="headerlink" href="#removememberpolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removeMemberPolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): ResourceExt</p>
 <div class="admonition note">
@@ -1584,7 +1583,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Stop all URL of Access Policies from applying to the Resource’s children.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id31">
+<div class="section" id="id31">
 <h4>Type parameters:<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1598,8 +1597,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id32">
+</div>
+<div class="section" id="id32">
 <h4>Parameters:<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1617,11 +1616,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but without any Policy applying to the Resource’s children.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L538">src/acp/control.ts:538</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L538">src/acp/control.ts:538</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removepolicyurl">
+<div class="section" id="removepolicyurl">
 <h3>removePolicyUrl<a class="headerlink" href="#removepolicyurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removePolicyUrl</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt, <code class="docutils literal notranslate"><span class="pre">policyUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a>): ResourceExt</p>
 <div class="admonition note">
@@ -1631,7 +1630,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Stop the URL of a given <a class="reference external" href="acp_policy.html#policy">Policy</a> from applying to a Resource.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id33">
+<div class="section" id="id33">
 <h4>Type parameters:<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1645,8 +1644,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id34">
+</div>
+<div class="section" id="id34">
 <h4>Parameters:<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1668,11 +1667,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but with the given Policy removed from it.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L460">src/acp/control.ts:460</a></p>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L460">src/acp/control.ts:460</a></p>
+</div>
+</div>
 <hr class="docutils" />
-<section id="removepolicyurlall">
+<div class="section" id="removepolicyurlall">
 <h3>removePolicyUrlAll<a class="headerlink" href="#removepolicyurlall" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>removePolicyUrlAll</strong>&lt;ResourceExt&gt;(<code class="docutils literal notranslate"><span class="pre">resourceWithAcr</span></code>: ResourceExt): ResourceExt</p>
 <div class="admonition note">
@@ -1682,7 +1681,7 @@ function is still experimental and subject to change, even in a non-major releas
 </div>
 <p>Stop all URL of Access Policies from applying to a Resource.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<section id="id35">
+<div class="section" id="id35">
 <h4>Type parameters:<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1696,8 +1695,8 @@ function is still experimental and subject to change, even in a non-major releas
 </tr>
 </tbody>
 </table>
-</section>
-<section id="id36">
+</div>
+<div class="section" id="id36">
 <h4>Parameters:<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
@@ -1715,11 +1714,11 @@ function is still experimental and subject to change, even in a non-major releas
 </table>
 <p><strong>Returns:</strong> ResourceExt</p>
 <p>A Resource with a new Access Control Resource equal to the original ACR, but without any Policy applying to the Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/c225cb9/src/acp/control.ts#L513">src/acp/control.ts:513</a></p>
-</section>
-</section>
-</section>
-</section>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0b26e7a/src/acp/control.ts#L513">src/acp/control.ts:513</a></p>
+</div>
+</div>
+</div>
+</div>
 
 
               </div>
