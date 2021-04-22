@@ -534,7 +534,7 @@
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="getcontenttype">
 <h3>getContentType<a class="headerlink" href="#getcontenttype" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getContentType</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>): <em>string</em> | <em>null</em></p>
+<p>▸ <strong>getContentType</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>): <em>string</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <div class="section" id="parameters">
 <h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -551,15 +551,15 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
+<p><strong>Returns:</strong> <em>string</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>The Content Type, if known, or null if not known.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L105">src/resource/resource.ts:105</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L105">src/resource/resource.ts:105</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getpodowner">
 <h3>getPodOwner<a class="headerlink" href="#getpodowner" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getPodOwner</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <em>null</em></p>
+<p>▸ <strong>getPodOwner</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Given a Resource that exposes information about the owner of the Pod it is in, returns the WebID of that owner.</p>
 <p>Data about the owner of the Pod is exposed when the following conditions hold:</p>
 <ul class="simple">
@@ -584,9 +584,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <em>null</em></p>
+<p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>The WebID of the owner of the Pod the Resource is in, if provided, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L139">src/resource/resource.ts:139</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L139">src/resource/resource.ts:139</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -618,7 +618,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
 <p>Promise resolving to the metadata describing the given Resource, or rejecting if fetching it failed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L54">src/resource/resource.ts:54</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L54">src/resource/resource.ts:54</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -641,8 +641,8 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
 <p>The URL from which the Resource has been fetched, or null if it is not known.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L113">src/resource/resource.ts:113</a></p>
-<p>▸ <strong>getSourceUrl</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#resource"><em>Resource</em></a>): <em>string</em> | <em>null</em></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L113">src/resource/resource.ts:113</a></p>
+<p>▸ <strong>getSourceUrl</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#resource"><em>Resource</em></a>): <em>string</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 </div>
 <div class="section" id="id5">
 <h4>Parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
@@ -658,8 +658,8 @@ fetching the resource itself.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L114">src/resource/resource.ts:114</a></p>
+<p><strong>Returns:</strong> <em>string</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L114">src/resource/resource.ts:114</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -684,13 +684,13 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether <code class="docutils literal notranslate"><span class="pre">resource</span></code> is a Container.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L82">src/resource/resource.ts:82</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L82">src/resource/resource.ts:82</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="ispodowner">
 <h3>isPodOwner<a class="headerlink" href="#ispodowner" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>isPodOwner</strong>(<code class="docutils literal notranslate"><span class="pre">webId</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>, <code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <em>boolean</em> | <em>null</em></p>
+<p>▸ <strong>isPodOwner</strong>(<code class="docutils literal notranslate"><span class="pre">webId</span></code>: <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a>, <code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <em>boolean</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Given a WebID and a Resource that exposes information about the owner of the Pod it is in, returns whether the given WebID is the owner of the Pod.</p>
 <p>Data about the owner of the Pod is exposed when the following conditions hold:</p>
 <ul class="simple">
@@ -719,9 +719,9 @@ fetching the resource itself.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>boolean</em> | <em>null</em></p>
+<p><strong>Returns:</strong> <em>boolean</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Whether the given WebID is the Pod Owner’s, if the Pod Owner is exposed, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it is not exposed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L166">src/resource/resource.ts:166</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L166">src/resource/resource.ts:166</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -747,7 +747,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether <code class="docutils literal notranslate"><span class="pre">resource</span></code> contains raw data.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f5e706a/src/resource/resource.ts#L97">src/resource/resource.ts:97</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a573d3e/src/resource/resource.ts#L97">src/resource/resource.ts:97</a></p>
 </div>
 </div>
 </div>
