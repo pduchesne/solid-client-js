@@ -410,12 +410,36 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geteffectiveaccess">
+     getEffectiveAccess
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getlinkedresourceurlall">
+     getLinkedResourceUrlAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Parameters:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#getpodowner">
      getPodOwner
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
+      <a class="reference internal nav-link" href="#id4">
        Parameters:
       </a>
      </li>
@@ -427,7 +451,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id3">
+      <a class="reference internal nav-link" href="#id5">
        Parameters:
       </a>
      </li>
@@ -439,12 +463,12 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id4">
+      <a class="reference internal nav-link" href="#id6">
        Parameters:
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
+      <a class="reference internal nav-link" href="#id7">
        Parameters:
       </a>
      </li>
@@ -456,7 +480,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id6">
+      <a class="reference internal nav-link" href="#id8">
        Parameters:
       </a>
      </li>
@@ -468,7 +492,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id7">
+      <a class="reference internal nav-link" href="#id9">
        Parameters:
       </a>
      </li>
@@ -480,7 +504,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id8">
+      <a class="reference internal nav-link" href="#id10">
        Parameters:
       </a>
      </li>
@@ -521,6 +545,8 @@
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="resource_resource.html#getcontenttype">getContentType</a></p></li>
+<li><p><a class="reference external" href="resource_resource.html#geteffectiveaccess">getEffectiveAccess</a></p></li>
+<li><p><a class="reference external" href="resource_resource.html#getlinkedresourceurlall">getLinkedResourceUrlAll</a></p></li>
 <li><p><a class="reference external" href="resource_resource.html#getpodowner">getPodOwner</a></p></li>
 <li><p><a class="reference external" href="resource_resource.html#getresourceinfo">getResourceInfo</a></p></li>
 <li><p><a class="reference external" href="resource_resource.html#getsourceurl">getSourceUrl</a></p></li>
@@ -553,7 +579,69 @@
 </table>
 <p><strong>Returns:</strong> <em>string</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>The Content Type, if known, or null if not known.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L105">src/resource/resource.ts:105</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L108">src/resource/resource.ts:108</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="geteffectiveaccess">
+<h3>getEffectiveAccess<a class="headerlink" href="#geteffectiveaccess" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getEffectiveAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <a class="reference external" href="interfaces.html#effectiveaccess"><em>EffectiveAccess</em></a></p>
+<p>Get what access the current user has to the given Resource.</p>
+<p>This function can tell you what access the current user has for the given
+Resource, allowing you to e.g. determine that changes to it will be rejected
+before attempting to do so.
+Additionally, for servers adhering to the Web Access Control specification,
+it will tell you what access unauthenticated users have to the given Resource.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Not released yet.</p>
+<div class="section" id="id2">
+<h4>Parameters:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a></p></td>
+<td class="text-align:left"><p>A Resource fetched from a Solid Pod.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#effectiveaccess"><em>EffectiveAccess</em></a></p>
+<p>What access the current user and, if supported by the server, unauthenticated users have to the given Resource.</p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L212">src/resource/resource.ts:212</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="getlinkedresourceurlall">
+<h3>getLinkedResourceUrlAll<a class="headerlink" href="#getlinkedresourceurlall" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getLinkedResourceUrlAll</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>): <a class="reference external" href="interfaces.html#linkedresourceurlall"><em>LinkedResourceUrlAll</em></a></p>
+<p>Get the URLs of Resources linked to the given Resource.</p>
+<p>Solid servers can link Resources to each other. For example, in servers
+implementing Web Access Control, Resources can have an Access Control List
+Resource linked to it via the <code class="docutils literal notranslate"><span class="pre">acl</span></code> relation.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Not released yet.</p>
+<div class="section" id="id3">
+<h4>Parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a></p></td>
+<td class="text-align:left"><p>A Resource fetched from a Solid Pod.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#linkedresourceurlall"><em>LinkedResourceUrlAll</em></a></p>
+<p>The URLs of Resources linked to the given Resource, indexed by the key that links them.</p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L193">src/resource/resource.ts:193</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -568,8 +656,8 @@
 </ul>
 <p>If one or more of those conditions are false, this function will return <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 0.6.0</p>
-<div class="section" id="id2">
-<h4>Parameters:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id4">
+<h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -586,7 +674,7 @@
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#webid"><em>WebId</em></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>The WebID of the owner of the Pod the Resource is in, if provided, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L139">src/resource/resource.ts:139</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L142">src/resource/resource.ts:142</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -596,8 +684,8 @@
 <p>Retrieve the information about a resource (e.g. access permissions) without
 fetching the resource itself.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 0.4.0</p>
-<div class="section" id="id3">
-<h4>Parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id5">
+<h4>Parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -618,15 +706,15 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
 <p>Promise resolving to the metadata describing the given Resource, or rejecting if fetching it failed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L54">src/resource/resource.ts:54</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L57">src/resource/resource.ts:57</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getsourceurl">
 <h3>getSourceUrl<a class="headerlink" href="#getsourceurl" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getSourceUrl</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>): <em>string</em></p>
-<div class="section" id="id4">
-<h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id6">
+<h4>Parameters:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -641,11 +729,11 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
 <p>The URL from which the Resource has been fetched, or null if it is not known.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L113">src/resource/resource.ts:113</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L116">src/resource/resource.ts:116</a></p>
 <p>▸ <strong>getSourceUrl</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#resource"><em>Resource</em></a>): <em>string</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 </div>
-<div class="section" id="id5">
-<h4>Parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id7">
+<h4>Parameters:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -659,15 +747,15 @@ fetching the resource itself.</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>string</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L114">src/resource/resource.ts:114</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L117">src/resource/resource.ts:117</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="iscontainer">
 <h3>isContainer<a class="headerlink" href="#iscontainer" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>isContainer</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>): <em>boolean</em></p>
-<div class="section" id="id6">
-<h4>Parameters:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id8">
+<h4>Parameters:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -684,7 +772,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether <code class="docutils literal notranslate"><span class="pre">resource</span></code> is a Container.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L82">src/resource/resource.ts:82</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L85">src/resource/resource.ts:85</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -699,8 +787,8 @@ fetching the resource itself.</p>
 </ul>
 <p>If one or more of those conditions are false, this function will return <code class="docutils literal notranslate"><span class="pre">null</span></code>.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 0.6.0</p>
-<div class="section" id="id7">
-<h4>Parameters:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id9">
+<h4>Parameters:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -721,7 +809,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Whether the given WebID is the Pod Owner’s, if the Pod Owner is exposed, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if it is not exposed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L166">src/resource/resource.ts:166</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L169">src/resource/resource.ts:169</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -729,8 +817,8 @@ fetching the resource itself.</p>
 <h3>isRawData<a class="headerlink" href="#israwdata" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>isRawData</strong>(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>): <em>boolean</em></p>
 <p>This function will tell you whether a given Resource contains raw data, or a SolidDataset.</p>
-<div class="section" id="id8">
-<h4>Parameters:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id10">
+<h4>Parameters:<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -747,7 +835,7 @@ fetching the resource itself.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <p>Whether <code class="docutils literal notranslate"><span class="pre">resource</span></code> contains raw data.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f095de2/src/resource/resource.ts#L97">src/resource/resource.ts:97</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/62f038b/src/resource/resource.ts#L100">src/resource/resource.ts:100</a></p>
 </div>
 </div>
 </div>
