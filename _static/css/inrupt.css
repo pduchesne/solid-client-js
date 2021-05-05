@@ -266,6 +266,21 @@ dl.option {
 code.descname {
    font-size: 0.9em;
 }
+
+/* Make envvar link same as other links*/
+
+a.internal > code.std-envvar > span.pre {
+   color: #005b81;
+   font-weight: 400;
+   line-height: 1.65; 
+}
+
+a.internal:hover > code.std-envvar > span.pre {
+   color: rgba(var(--pst-color-link-hover),1);
+}
+
+
+
 /* Need styling for :guilabel: directives */
 
 .guilabel {
