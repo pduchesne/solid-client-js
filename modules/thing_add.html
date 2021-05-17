@@ -32,6 +32,8 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Module: thing/get" href="thing_get.html" />
@@ -560,7 +562,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -591,7 +593,7 @@
 </table>
 <p><strong>Returns:</strong> T</p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/thing/add.ts#L99">src/thing/add.ts:99</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/thing/add.ts#L120">src/thing/add.ts:120</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -611,7 +613,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -642,7 +644,7 @@
 </table>
 <p><strong>Returns:</strong> T</p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/thing/add.ts#L121">src/thing/add.ts:121</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/thing/add.ts#L142">src/thing/add.ts:142</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -662,7 +664,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -693,7 +695,7 @@
 </table>
 <p><strong>Returns:</strong> T</p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/thing/add.ts#L143">src/thing/add.ts:143</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/thing/add.ts#L164">src/thing/add.ts:164</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -713,7 +715,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -744,7 +746,7 @@
 </table>
 <p><strong>Returns:</strong> T</p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/thing/add.ts#L165">src/thing/add.ts:165</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/thing/add.ts#L186">src/thing/add.ts:186</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -764,7 +766,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -795,7 +797,7 @@
 </table>
 <p><strong>Returns:</strong> T</p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/thing/add.ts#L211">src/thing/add.ts:211</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/thing/add.ts#L260">src/thing/add.ts:260</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -815,7 +817,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -850,13 +852,13 @@
 </table>
 <p><strong>Returns:</strong> T</p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/thing/add.ts#L188">src/thing/add.ts:188</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/thing/add.ts#L209">src/thing/add.ts:209</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="addurl">
 <h3>addUrl<a class="headerlink" href="#addurl" title="Permalink to this headline">¶</a></h3>
-<p>▸ <code class="docutils literal notranslate"><span class="pre">Const</span></code> <strong>addUrl</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: T, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <em>string</em> | <a class="reference external" href="interfaces.html#url"><em>Url</em></a>, <code class="docutils literal notranslate"><span class="pre">value</span></code>: <em>string</em> | <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>): T</p>
+<p>▸ <code class="docutils literal notranslate"><span class="pre">Const</span></code> <strong>addUrl</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: T, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <em>string</em> | <a class="reference external" href="interfaces.html#url"><em>Url</em></a>, <code class="docutils literal notranslate"><span class="pre">value</span></code>: <em>string</em> | <em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` \| *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string \| \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` \| Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* \| \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` \| \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt; | <a class="reference external" href="interfaces.html#url"><em>Url</em></a>): T</p>
 <p>Create a new Thing with a URL added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#seturl">setUrl</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
@@ -870,7 +872,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -894,14 +896,14 @@
 <td class="text-align:left"><p>Property for which to add the given URL value.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">value</span></code></p></td>
-<td class="text-align:left"><p><em>string</em> | <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><em>string</em> | <em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt; | <a class="reference external" href="interfaces.html#url"><em>Url</em></a></p></td>
 <td class="text-align:left"><p>-</p></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> T</p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/thing/add.ts#L59">src/thing/add.ts:59</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/thing/add.ts#L58">src/thing/add.ts:58</a></p>
 </div>
 </div>
 </div>

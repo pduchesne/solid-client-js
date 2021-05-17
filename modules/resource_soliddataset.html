@@ -32,6 +32,8 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Module: thing/add" href="thing_add.html" />
@@ -583,7 +585,7 @@ it is intended to aid in debugging, not as a serialisation method that can be re
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L723">src/resource/solidDataset.ts:723</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L857">src/resource/solidDataset.ts:857</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -618,7 +620,7 @@ Resource; i.e. there is no need to call this function if it is immediately follo
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L307">src/resource/solidDataset.ts:307</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L438">src/resource/solidDataset.ts:438</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -660,7 +662,7 @@ will do the job just fine, and does not require the parent Container to exist in
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L575">src/resource/solidDataset.ts:575</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L707">src/resource/solidDataset.ts:707</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -670,7 +672,7 @@ will do the job just fine, and does not require the parent Container to exist in
 <p>Initialise a new <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> in memory.</p>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a></p>
 <p>An empty <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L72">src/resource/solidDataset.ts:72</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L76">src/resource/solidDataset.ts:76</a></p>
 </div>
 <hr class="docutils" />
 <div class="section" id="deletecontainer">
@@ -696,7 +698,7 @@ will do the job just fine, and does not require the parent Container to exist in
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;void&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L631">src/resource/solidDataset.ts:631</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L765">src/resource/solidDataset.ts:765</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -723,7 +725,7 @@ will do the job just fine, and does not require the parent Container to exist in
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;void&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L270">src/resource/solidDataset.ts:270</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L401">src/resource/solidDataset.ts:401</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -752,13 +754,13 @@ If the solidDataset given is not a container, or is missing resourceInfo, throw 
 </table>
 <p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
 <p>A list of URLs, each of which points to a contained Resource of the given SolidDataset.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L670">src/resource/solidDataset.ts:670</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L804">src/resource/solidDataset.ts:804</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getsoliddataset">
 <h3>getSolidDataset<a class="headerlink" href="#getsoliddataset" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getSolidDataset</strong>(<code class="docutils literal notranslate"><span class="pre">url</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#url"><em>Url</em></a>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>Partial</em>&lt;<em>typeof</em> internal_defaultFetchOptions&gt;): <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
+<p>▸ <strong>getSolidDataset</strong>(<code class="docutils literal notranslate"><span class="pre">url</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#url"><em>Url</em></a>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>Partial</em>&lt;<em>typeof</em> internal_defaultFetchOptions &amp; ParseOptions&gt;): <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
 <p>Fetch a SolidDataset from the given URL. Currently requires the SolidDataset to be available as <a class="reference external" href="https://www.w3.org/TR/turtle/">Turtle</a>.</p>
 <div class="section" id="id7">
 <h4>Parameters<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
@@ -775,14 +777,14 @@ If the solidDataset given is not a container, or is missing resourceInfo, throw 
 <td class="text-align:left"><p>URL to fetch a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
-<td class="text-align:left"><p><em>Partial</em>&lt;<em>typeof</em> internal_defaultFetchOptions&gt;</p></td>
+<td class="text-align:left"><p><em>Partial</em>&lt;<em>typeof</em> internal_defaultFetchOptions &amp; ParseOptions&gt;</p></td>
 <td class="text-align:left"><p>Optional parameter <code class="docutils literal notranslate"><span class="pre">options.fetch</span></code>: An alternative <code class="docutils literal notranslate"><span class="pre">fetch</span></code> function to make the HTTP request, compatible with the browser-native <a class="reference external" href="https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/fetch#parameters">fetch API</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
 <p>Promise resolving to a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> containing the data at the given Resource, or rejecting if fetching it failed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L83">src/resource/solidDataset.ts:83</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L221">src/resource/solidDataset.ts:221</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -813,7 +815,7 @@ it will exist after this function resolves successfully.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Dataset</span></code></p></td>
-<td class="text-align:left"><p><em>DatasetCore</em>&lt;Quad, Quad, Dataset&gt;</p></td>
+<td class="text-align:left"><p><em>Readonly</em>&lt;{ <code class="docutils literal notranslate"><span class="pre">graphs</span></code>: <em>Readonly</em>&lt;<em>Record</em>&lt;string, Readonly&lt;Record&lt;string | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`, Readonly&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;&gt;&gt;&gt; &amp; { <code class="docutils literal notranslate"><span class="pre">default</span></code>: <em>Readonly</em>&lt;Record&lt;string | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`, Readonly&lt;{ <code class="docutils literal notranslate"><span class="pre">predicates</span></code>: <em>Readonly</em>&lt;Record&lt;string, Readonly&lt;Partial&lt;{ <code class="docutils literal notranslate"><span class="pre">blankNodes</span></code>: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | *Readonly*&lt;Record&lt;string, Readonly&lt;Partial&lt;{ literals: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; langStrings: Readonly&lt;Record&lt;string, readonly string[]\&gt;\&gt;; namedNodes: readonly (string | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]; blankNodes: readonly (`_:<span class="math notranslate nohighlight">\({string}\` | Readonly&lt;...\&gt;)[]; }\&gt;\&gt;\&gt;\&gt;)[] ; `langStrings`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `literals`: *Readonly*&lt;Record&lt;string, readonly *string*[]\&gt;\&gt; ; `namedNodes`: readonly (*string* | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`)[]  }&gt;&gt;&gt;&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Subject&quot;</span></code> ; <code class="docutils literal notranslate"><span class="pre">url</span></code>: <em>string</em> | `_:<span class="math notranslate nohighlight">\({string}\` | \`https://inrupt.com/.well-known/sdk-local-node/\)</span>{string}`  }&gt;&gt;&gt;  }&gt; ; <code class="docutils literal notranslate"><span class="pre">type</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;Dataset&quot;</span></code>  }&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -844,7 +846,7 @@ it will exist after this function resolves successfully.</p>
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;Dataset &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a> &amp; WithChangeLog&gt;</p>
 <p>A Promise resolving to a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> containing the stored data, or rejecting if saving it failed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L209">src/resource/solidDataset.ts:209</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L342">src/resource/solidDataset.ts:342</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -890,7 +892,7 @@ will do the job just fine, and does not require the parent Container to exist in
 </table>
 <p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>&gt;</p>
 <p>A Promise resolving to a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> containing the saved data. The Promise rejects if the save failed.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L488">src/resource/solidDataset.ts:488</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L621">src/resource/solidDataset.ts:621</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -918,7 +920,7 @@ it is intended to aid in debugging, not as a serialisation method that can be re
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/226357a/src/resource/solidDataset.ts#L689">src/resource/solidDataset.ts:689</a></p>
+<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/4633361/src/resource/solidDataset.ts#L823">src/resource/solidDataset.ts:823</a></p>
 </div>
 </div>
 </div>
