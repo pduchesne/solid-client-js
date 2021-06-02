@@ -387,6 +387,16 @@
        Parameters
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#returns">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -433,7 +443,7 @@
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mockthingfrom">
 <h3>mockThingFrom<a class="headerlink" href="#mockthingfrom" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>mockThingFrom</strong>(<code class="docutils literal notranslate"><span class="pre">url</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a></p>
+<p>▸ <strong>mockThingFrom</strong>(<code class="docutils literal notranslate"><span class="pre">url</span></code>): <a class="reference external" href="interfaces.html#thingpersisted">ThingPersisted</a></p>
 <p>Function for use in unit tests to mock a <a class="reference external" href="interfaces.html#thing">Thing</a> with a given URL.</p>
 <p>Warning: do not use this function in actual production code.
 This function initialises a new empty Thing and sets its URL to a given URL.
@@ -451,14 +461,20 @@ This is useful to mock a Thing in tests of code that call e.g.
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">url</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url">Url</a> | <a class="reference external" href="interfaces.html#urlstring">UrlString</a></p></td>
 <td class="text-align:left"><p>The URL that the mocked Thing pretends identifies it.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#thingpersisted"><em>ThingPersisted</em></a></p>
+</div>
+<div class="section" id="returns">
+<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="interfaces.html#thingpersisted">ThingPersisted</a></p>
 <p>A new Thing, pretending to be identified by the given URL.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/58c9ec2/src/thing/mock.ts#L37">src/thing/mock.ts:37</a></p>
+</div>
+<div class="section" id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ffbb64e/src/thing/mock.ts#L37">src/thing/mock.ts:37</a></p>
 </div>
 </div>
 </div>

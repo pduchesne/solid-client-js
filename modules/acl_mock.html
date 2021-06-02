@@ -392,6 +392,16 @@
        Parameters
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#returns">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -407,6 +417,16 @@
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#id3">
        Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Defined in
       </a>
      </li>
     </ul>
@@ -456,7 +476,7 @@
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="addmockfallbackaclto">
 <h3>addMockFallbackAclTo<a class="headerlink" href="#addmockfallbackaclto" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>addMockFallbackAclTo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: T): T &amp; <a class="reference external" href="acl_acl.html#withfallbackacl"><em>WithFallbackAcl</em></a></p>
+<p>▸ <strong>addMockFallbackAclTo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>): <code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acl_acl.html#withfallbackacl">WithFallbackAcl</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Do not use this function in production code.  For use in <strong>unit tests</strong> that require a
@@ -475,7 +495,7 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo">WithServerResourceInfo</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -491,20 +511,26 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
-<td class="text-align:left"><p>T</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
 <td class="text-align:left"><p>The Resource to mock up with new fallback ACL.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> T &amp; <a class="reference external" href="acl_acl.html#withfallbackacl"><em>WithFallbackAcl</em></a></p>
+</div>
+<div class="section" id="returns">
+<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acl_acl.html#withfallbackacl">WithFallbackAcl</a></p>
 <p>The input Resource with an empty fallback ACL attached.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/58c9ec2/src/acl/mock.ts#L86">src/acl/mock.ts:86</a></p>
+</div>
+<div class="section" id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ffbb64e/src/acl/mock.ts#L86">src/acl/mock.ts:86</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="addmockresourceaclto">
 <h3>addMockResourceAclTo<a class="headerlink" href="#addmockresourceaclto" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>addMockResourceAclTo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: T): T &amp; <a class="reference external" href="acl_acl.html#withresourceacl"><em>WithResourceAcl</em></a></p>
+<p>▸ <strong>addMockResourceAclTo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>): <code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acl_acl.html#withresourceacl">WithResourceAcl</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Do not use this function in production code. For use in <strong>unit tests</strong> that
@@ -523,7 +549,7 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: <a class="reference external" href="interfaces.html#withserverresourceinfo">WithServerResourceInfo</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -539,14 +565,20 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
-<td class="text-align:left"><p>T</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
 <td class="text-align:left"><p>The Resource to mock up with a new resource ACL.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> T &amp; <a class="reference external" href="acl_acl.html#withresourceacl"><em>WithResourceAcl</em></a></p>
+</div>
+<div class="section" id="id4">
+<h4>Returns<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acl_acl.html#withresourceacl">WithResourceAcl</a></p>
 <p>The input Resource with an empty resource ACL attached.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/58c9ec2/src/acl/mock.ts#L48">src/acl/mock.ts:48</a></p>
+</div>
+<div class="section" id="id5">
+<h4>Defined in<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ffbb64e/src/acl/mock.ts#L48">src/acl/mock.ts:48</a></p>
 </div>
 </div>
 </div>
