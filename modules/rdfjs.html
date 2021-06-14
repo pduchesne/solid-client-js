@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module: acp/mock &#8212; Inrupt solid-client API Documentation</title>
+    <title>Module: rdfjs &#8212; Inrupt solid-client API Documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -34,8 +34,8 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Module: acp/policy" href="acp_policy.html" />
-    <link rel="prev" title="Module: acp/control" href="acp_control.html" />
+    <link rel="next" title="Module: resource/file" href="resource_file.html" />
+    <link rel="prev" title="Module: interfaces" href="interfaces.html" />
   
   <meta name="robots" content="index" />
   
@@ -55,7 +55,7 @@
   <script type="text/javascript">
     window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
       fieldValues: {
-        description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/acp_mock/ \n'
+        description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/rdfjs/ \n'
       }
     });
   </script><!-- Matomo -->
@@ -235,8 +235,8 @@
    Module: acp/control
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_mock.html">
    Module: acp/mock
   </a>
  </li>
@@ -255,8 +255,8 @@
    Module: interfaces
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rdfjs.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Module: rdfjs
   </a>
  </li>
@@ -371,6 +371,11 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-aliases">
+     Type aliases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#functions">
      Functions
     </a>
@@ -379,19 +384,33 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
+   Type aliases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tordfjsoptions">
+     ToRdfJsOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
    Functions
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#addmockacrto">
-     addMockAcrTo
+    <a class="reference internal nav-link" href="#fromrdfjsdataset">
+     fromRdfJsDataset
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#type-parameters">
-       Type parameters
-      </a>
-     </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#parameters">
        Parameters
@@ -403,29 +422,29 @@
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#defined-in">
+      <a class="reference internal nav-link" href="#id3">
        Defined in
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mockacrfor">
-     mockAcrFor
+    <a class="reference internal nav-link" href="#tordfjsdataset">
+     toRdfJsDataset
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
+      <a class="reference internal nav-link" href="#id4">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id3">
+      <a class="reference internal nav-link" href="#id5">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id4">
+      <a class="reference internal nav-link" href="#id6">
        Defined in
       </a>
      </li>
@@ -459,47 +478,47 @@
   
               <div>
                 
-  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / acp/mock</p>
-<div class="tex2jax_ignore mathjax_ignore section" id="module-acp-mock">
-<h1>Module: acp/mock<a class="headerlink" href="#module-acp-mock" title="Permalink to this headline">¶</a></h1>
+  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / rdfjs</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="module-rdfjs">
+<h1>Module: rdfjs<a class="headerlink" href="#module-rdfjs" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="type-aliases">
+<h3>Type aliases<a class="headerlink" href="#type-aliases" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="rdfjs.html#tordfjsoptions">ToRdfJsOptions</a></p></li>
+</ul>
+</div>
 <div class="section" id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="acp_mock.html#addmockacrto">addMockAcrTo</a></p></li>
-<li><p><a class="reference external" href="acp_mock.html#mockacrfor">mockAcrFor</a></p></li>
+<li><p><a class="reference external" href="rdfjs.html#fromrdfjsdataset">fromRdfJsDataset</a></p></li>
+<li><p><a class="reference external" href="rdfjs.html#tordfjsdataset">toRdfJsDataset</a></p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="id1">
-<h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="addmockacrto">
-<h3>addMockAcrTo<a class="headerlink" href="#addmockacrto" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>addMockAcrTo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>, <code class="docutils literal notranslate"><span class="pre">accessControlResource?</span></code>): <code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acp_acp.html#withaccessibleacr">WithAccessibleAcr</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do not use this function in production code.  For use in <strong>unit tests</strong> that require a
-Resource with an <a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a>.</p>
+<h2>Type aliases<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tordfjsoptions">
+<h3>ToRdfJsOptions<a class="headerlink" href="#tordfjsoptions" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>ToRdfJsOptions</strong>: <code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Object</span></code>&gt;</p>
+<div class="section" id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a828074/src/rdfjs.ts#L93">src/rdfjs.ts:93</a></p>
 </div>
-<p>Attaches an Access Control Resource to a given <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> for use
-in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference external" href="acp_control.html#getpolicyurlall">getPolicyUrlAll</a>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<div class="section" id="type-parameters">
-<h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
-<th class="text-align:left head"><p>Type</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: <a class="reference external" href="interfaces.html#withresourceinfo">WithResourceInfo</a></p></td>
-</tr>
-</tbody>
-</table>
 </div>
+</div>
+<div class="section" id="id2">
+<h2>Functions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fromrdfjsdataset">
+<h3>fromRdfJsDataset<a class="headerlink" href="#fromrdfjsdataset" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>fromRdfJsDataset</strong>(<code class="docutils literal notranslate"><span class="pre">rdfJsDataset</span></code>): <code class="docutils literal notranslate"><span class="pre">ImmutableDataset</span></code></p>
+<p>Convert an RDF/JS Dataset into a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a></p>
+<p>Parse an RDF/JS
+<a class="reference external" href="https://rdf.js.org/dataset-spec/#datasetcore-interface">DatasetCore</a>,
+into a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>. Note that, when saving the returned SolidDataset to
+a Solid Pod, only Quads in the Default Graph will be stored.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Not released yet.</p>
 <div class="section" id="parameters">
 <h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -510,41 +529,33 @@ in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference e
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
-<td class="text-align:left"><p>The Resource to mock up with a new resource ACL.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">accessControlResource</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a></p></td>
-<td class="text-align:left"><p>The Access Control Resource to attach to the given Resource.</p></td>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">rdfJsDataset</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">RdfJs.DatasetCore</span></code></p></td>
+<td class="text-align:left"><p>The source RDF/JS Dataset.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="returns">
 <h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acp_acp.html#withaccessibleacr">WithAccessibleAcr</a></p>
-<p>The input Resource with an empty resource ACL attached.</p>
+<p><code class="docutils literal notranslate"><span class="pre">ImmutableDataset</span></code></p>
+<p>A <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> containing the same data as the given RDF/JS Dataset.</p>
 </div>
-<div class="section" id="defined-in">
-<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a828074/src/acp/mock.ts#L67">src/acp/mock.ts:67</a></p>
+<div class="section" id="id3">
+<h4>Defined in<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a828074/src/rdfjs.ts#L63">src/rdfjs.ts:63</a></p>
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="mockacrfor">
-<h3>mockAcrFor<a class="headerlink" href="#mockacrfor" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>mockAcrFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>): <a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do not use this function in production code.  For use in <strong>unit tests</strong> that require a
-<a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a>.</p>
-</div>
-<p>Initialises a new empty Access Control Resource for a given Resource for use
-in <strong>unit tests</strong>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
-<div class="section" id="id2">
-<h4>Parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="tordfjsdataset">
+<h3>toRdfJsDataset<a class="headerlink" href="#tordfjsdataset" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>toRdfJsDataset</strong>(<code class="docutils literal notranslate"><span class="pre">set</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">RdfJs.DatasetCore</span></code></p>
+<p>Convert a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> into an RDF/JS Dataset</p>
+<p>Export a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> into an RDF/JS
+<a class="reference external" href="https://rdf.js.org/dataset-spec/#datasetcore-interface">DatasetCore</a>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Not released yet.</p>
+<div class="section" id="id4">
+<h4>Parameters<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -553,21 +564,25 @@ in <strong>unit tests</strong>.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#urlstring">UrlString</a></p></td>
-<td class="text-align:left"><p>The URL of the Resource to which the mocked ACR should apply.</p></td>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">set</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">ImmutableDataset</span></code></p></td>
+<td class="text-align:left"><p>A <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> to export into an RDF/JS Dataset.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="rdfjs.html#tordfjsoptions">ToRdfJsOptions</a></p></td>
+<td class="text-align:left"><p>Optional parameter that allows you to pass in your own RDF/JS DataFactory or DatasetCoreFactory.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="id3">
-<h4>Returns<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a></p>
-<p>The mocked empty Access Control Resource for the given Resource.</p>
+<div class="section" id="id5">
+<h4>Returns<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">RdfJs.DatasetCore</span></code></p>
+<p>An RDF/JS Dataset containing the data from the given SolidDataset.</p>
 </div>
-<div class="section" id="id4">
-<h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a828074/src/acp/mock.ts#L43">src/acp/mock.ts:43</a></p>
+<div class="section" id="id6">
+<h4>Defined in<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/a828074/src/rdfjs.ts#L110">src/rdfjs.ts:110</a></p>
 </div>
 </div>
 </div>
@@ -581,8 +596,8 @@ in <strong>unit tests</strong>.</p>
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="acp_control.html" title="previous page">Module: acp/control</a>
-    <a class='right-next' id="next-link" href="acp_policy.html" title="next page">Module: acp/policy</a>
+    <a class='left-prev' id="prev-link" href="interfaces.html" title="previous page">Module: interfaces</a>
+    <a class='right-next' id="next-link" href="resource_file.html" title="next page">Module: resource/file</a>
 
               </div>
               
