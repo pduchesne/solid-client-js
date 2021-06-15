@@ -34,7 +34,7 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Module: thing/get" href="thing_get.html" />
+    <link rel="next" title="Module: thing/build" href="thing_build.html" />
     <link rel="prev" title="Module: resource/solidDataset" href="resource_soliddataset.html" />
   
   <meta name="robots" content="index" />
@@ -286,6 +286,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="thing_build.html">
+   Module: thing/build
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="thing_get.html">
    Module: thing/get
   </a>
@@ -371,6 +376,11 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-aliases">
+     Type aliases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#functions">
      Functions
     </a>
@@ -379,6 +389,52 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
+   Type aliases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#addoftype">
+     AddOfType
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-parameters">
+       Type parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-declaration">
+       Type declaration
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id2">
+         Type parameters
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#parameters">
+         Parameters
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#returns">
+         Returns
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
    Functions
   </a>
   <ul class="nav section-nav flex-column">
@@ -388,22 +444,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#type-parameters">
+      <a class="reference internal nav-link" href="#id4">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#parameters">
+      <a class="reference internal nav-link" href="#id5">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#returns">
+      <a class="reference internal nav-link" href="#id6">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#defined-in">
+      <a class="reference internal nav-link" href="#id7">
        Defined in
       </a>
      </li>
@@ -415,22 +471,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
+      <a class="reference internal nav-link" href="#id8">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id3">
+      <a class="reference internal nav-link" href="#id9">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id4">
+      <a class="reference internal nav-link" href="#id10">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
+      <a class="reference internal nav-link" href="#id11">
        Defined in
       </a>
      </li>
@@ -442,22 +498,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id6">
+      <a class="reference internal nav-link" href="#id12">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id7">
+      <a class="reference internal nav-link" href="#id13">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id8">
+      <a class="reference internal nav-link" href="#id14">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id9">
+      <a class="reference internal nav-link" href="#id15">
        Defined in
       </a>
      </li>
@@ -469,22 +525,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id10">
+      <a class="reference internal nav-link" href="#id16">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id11">
+      <a class="reference internal nav-link" href="#id17">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id12">
+      <a class="reference internal nav-link" href="#id18">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id13">
+      <a class="reference internal nav-link" href="#id19">
        Defined in
       </a>
      </li>
@@ -496,22 +552,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id14">
+      <a class="reference internal nav-link" href="#id20">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id15">
+      <a class="reference internal nav-link" href="#id21">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id16">
+      <a class="reference internal nav-link" href="#id22">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id17">
+      <a class="reference internal nav-link" href="#id23">
        Defined in
       </a>
      </li>
@@ -523,22 +579,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id18">
+      <a class="reference internal nav-link" href="#id24">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id19">
+      <a class="reference internal nav-link" href="#id25">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id20">
+      <a class="reference internal nav-link" href="#id26">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id21">
+      <a class="reference internal nav-link" href="#id27">
        Defined in
       </a>
      </li>
@@ -550,22 +606,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id22">
+      <a class="reference internal nav-link" href="#id28">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id23">
+      <a class="reference internal nav-link" href="#id29">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id24">
+      <a class="reference internal nav-link" href="#id30">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id25">
+      <a class="reference internal nav-link" href="#id31">
        Defined in
       </a>
      </li>
@@ -604,6 +660,12 @@
 <h1>Module: thing/add<a class="headerlink" href="#module-thing-add" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="type-aliases">
+<h3>Type aliases<a class="headerlink" href="#type-aliases" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="thing_add.html#addoftype">AddOfType</a></p></li>
+</ul>
+</div>
 <div class="section" id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -618,15 +680,87 @@
 </div>
 </div>
 <div class="section" id="id1">
-<h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>Type aliases<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="addoftype">
+<h3>AddOfType<a class="headerlink" href="#addoftype" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>AddOfType</strong>&lt;Type&gt;: &lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <code class="docutils literal notranslate"><span class="pre">T</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url">Url</a> | <a class="reference external" href="interfaces.html#urlstring">UrlString</a>, <code class="docutils literal notranslate"><span class="pre">value</span></code>: <code class="docutils literal notranslate"><span class="pre">Type</span></code>) =&gt; <code class="docutils literal notranslate"><span class="pre">T</span></code></p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">param</span></code></strong> Thing to add a value to.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">param</span></code></strong> Property on which to add the given value.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">param</span></code></strong> Value to add to <code class="docutils literal notranslate"><span class="pre">thing</span></code> for the given <code class="docutils literal notranslate"><span class="pre">property</span></code>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">returns</span></code></strong> A new Thing equal to the input Thing with the given value removed for the given Property.</p>
+<div class="section" id="type-parameters">
+<h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="type-declaration">
+<h4>Type declaration<a class="headerlink" href="#type-declaration" title="Permalink to this headline">¶</a></h4>
+<p>▸ &lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code>): <code class="docutils literal notranslate"><span class="pre">T</span></code></p>
+<div class="section" id="id2">
+<h5>Type parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h5>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: <a class="reference external" href="interfaces.html#thing">Thing</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="parameters">
+<h5>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h5>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url">Url</a> | <a class="reference external" href="interfaces.html#urlstring">UrlString</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">value</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="returns">
+<h5>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
+</div>
+</div>
+<div class="section" id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L425">src/thing/add.ts:425</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Functions<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="addboolean">
 <h3>addBoolean<a class="headerlink" href="#addboolean" title="Permalink to this headline">¶</a></h3>
 <p>▸ <code class="docutils literal notranslate"><span class="pre">Const</span></code> <strong>addBoolean</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code>): <code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>Create a new Thing with a boolean added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#setboolean">setBoolean</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
-<div class="section" id="type-parameters">
-<h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id4">
+<h4>Type parameters<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -640,8 +774,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="parameters">
-<h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id5">
+<h4>Parameters<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -665,14 +799,14 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="returns">
-<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id6">
+<h4>Returns<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
 </div>
-<div class="section" id="defined-in">
-<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/3f1e5f4/src/thing/add.ts#L120">src/thing/add.ts:120</a></p>
+<div class="section" id="id7">
+<h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L120">src/thing/add.ts:120</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -682,8 +816,8 @@
 <p>Create a new Thing with a datetime added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#setdatetime">setDatetime</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
-<div class="section" id="id2">
-<h4>Type parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id8">
+<h4>Type parameters<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -697,8 +831,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id3">
-<h4>Parameters<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id9">
+<h4>Parameters<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -722,14 +856,14 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id4">
-<h4>Returns<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id10">
+<h4>Returns<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
 </div>
-<div class="section" id="id5">
-<h4>Defined in<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/3f1e5f4/src/thing/add.ts#L142">src/thing/add.ts:142</a></p>
+<div class="section" id="id11">
+<h4>Defined in<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L142">src/thing/add.ts:142</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -739,8 +873,8 @@
 <p>Create a new Thing with a decimal added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#setdecimal">setDecimal</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
-<div class="section" id="id6">
-<h4>Type parameters<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id12">
+<h4>Type parameters<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -754,8 +888,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id7">
-<h4>Parameters<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id13">
+<h4>Parameters<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -779,14 +913,14 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id8">
-<h4>Returns<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id14">
+<h4>Returns<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
 </div>
-<div class="section" id="id9">
-<h4>Defined in<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/3f1e5f4/src/thing/add.ts#L164">src/thing/add.ts:164</a></p>
+<div class="section" id="id15">
+<h4>Defined in<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L164">src/thing/add.ts:164</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -796,8 +930,8 @@
 <p>Create a new Thing with an integer added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#setinteger">setInteger</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
-<div class="section" id="id10">
-<h4>Type parameters<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id16">
+<h4>Type parameters<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -811,8 +945,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id11">
-<h4>Parameters<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id17">
+<h4>Parameters<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -836,14 +970,14 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id12">
-<h4>Returns<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id18">
+<h4>Returns<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
 </div>
-<div class="section" id="id13">
-<h4>Defined in<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/3f1e5f4/src/thing/add.ts#L186">src/thing/add.ts:186</a></p>
+<div class="section" id="id19">
+<h4>Defined in<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L186">src/thing/add.ts:186</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -853,8 +987,8 @@
 <p>Create a new Thing with an unlocalised string added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#setstringnolocale">setStringNoLocale</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
-<div class="section" id="id14">
-<h4>Type parameters<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id20">
+<h4>Type parameters<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -868,8 +1002,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id15">
-<h4>Parameters<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id21">
+<h4>Parameters<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -893,14 +1027,14 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id16">
-<h4>Returns<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id22">
+<h4>Returns<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
 </div>
-<div class="section" id="id17">
-<h4>Defined in<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/3f1e5f4/src/thing/add.ts#L260">src/thing/add.ts:260</a></p>
+<div class="section" id="id23">
+<h4>Defined in<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L260">src/thing/add.ts:260</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -910,8 +1044,8 @@
 <p>Create a new Thing with a localised string added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#setstringwithlocale">setStringWithLocale</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
-<div class="section" id="id18">
-<h4>Type parameters<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id24">
+<h4>Type parameters<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -925,8 +1059,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id19">
-<h4>Parameters<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id25">
+<h4>Parameters<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -954,14 +1088,14 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id20">
-<h4>Returns<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id26">
+<h4>Returns<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
 </div>
-<div class="section" id="id21">
-<h4>Defined in<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/3f1e5f4/src/thing/add.ts#L209">src/thing/add.ts:209</a></p>
+<div class="section" id="id27">
+<h4>Defined in<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L209">src/thing/add.ts:209</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -971,8 +1105,8 @@
 <p>Create a new Thing with a URL added for a Property.</p>
 <p>This preserves existing values for the given Property. To replace them, see <a class="reference external" href="thing_set.html#seturl">setUrl</a>.</p>
 <p>The original <code class="docutils literal notranslate"><span class="pre">thing</span></code> is not modified; this function returns a cloned Thing with updated values.</p>
-<div class="section" id="id22">
-<h4>Type parameters<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id28">
+<h4>Type parameters<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -986,8 +1120,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id23">
-<h4>Parameters<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id29">
+<h4>Parameters<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -1011,14 +1145,14 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id24">
-<h4>Returns<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id30">
+<h4>Returns<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
 <p>A new Thing equal to the input Thing with the given value added for the given Property.</p>
 </div>
-<div class="section" id="id25">
-<h4>Defined in<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/3f1e5f4/src/thing/add.ts#L58">src/thing/add.ts:58</a></p>
+<div class="section" id="id31">
+<h4>Defined in<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/add.ts#L58">src/thing/add.ts:58</a></p>
 </div>
 </div>
 </div>
@@ -1033,7 +1167,7 @@
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="resource_soliddataset.html" title="previous page">Module: resource/solidDataset</a>
-    <a class='right-next' id="next-link" href="thing_get.html" title="next page">Module: thing/get</a>
+    <a class='right-next' id="next-link" href="thing_build.html" title="next page">Module: thing/build</a>
 
               </div>
               
