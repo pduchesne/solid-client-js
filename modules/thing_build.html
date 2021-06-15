@@ -553,7 +553,7 @@
 <p>Add, replace or remove property values using consecutive calls to <code class="docutils literal notranslate"><span class="pre">.add*()</span></code>,
 <code class="docutils literal notranslate"><span class="pre">.set*()</span></code> and <code class="docutils literal notranslate"><span class="pre">.remove*()</span></code>, then finally generate a <a class="reference external" href="interfaces.html#thing">Thing</a> with the given
 properties using <code class="docutils literal notranslate"><span class="pre">.build()</span></code>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> Not released yet.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
 <div class="section" id="type-parameters">
 <h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -685,7 +685,7 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 </div>
 <div class="section" id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/build.ts#L102">src/thing/build.ts:102</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/182ea4b/src/thing/build.ts#L102">src/thing/build.ts:102</a></p>
 </div>
 </div>
 </div>
@@ -694,17 +694,29 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <div class="section" id="buildthing">
 <h3>buildThing<a class="headerlink" href="#buildthing" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thinglocal">ThingLocal</a>&gt;</p>
+<p>Modify a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can initialise several properties of a given Thing as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing(createThing({ name: &quot;profile-vincent&quot; }))
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
 <div class="section" id="parameters">
 <h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
 <th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
 <td class="text-align:left"><p><a class="reference external" href="interfaces.html#thinglocal">ThingLocal</a></p></td>
+<td class="text-align:left"><p>A Thing to modify.</p></td>
 </tr>
 </tbody>
 </table>
@@ -712,11 +724,22 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <div class="section" id="returns">
 <h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thinglocal">ThingLocal</a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
 </div>
 <div class="section" id="id3">
 <h4>Defined in<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/build.ts#L175">src/thing/build.ts:175</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/182ea4b/src/thing/build.ts#L191">src/thing/build.ts:191</a></p>
 <p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thingpersisted">ThingPersisted</a>&gt;</p>
+<p>Modify a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can initialise several properties of a given Thing as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing(createThing({ url: &quot;https://example.pod/profile#vincent&quot; }))
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
 </div>
 <div class="section" id="id4">
 <h4>Parameters<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
@@ -724,11 +747,13 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
 <th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
 <td class="text-align:left"><p><a class="reference external" href="interfaces.html#thingpersisted">ThingPersisted</a></p></td>
+<td class="text-align:left"><p>A Thing to modify.</p></td>
 </tr>
 </tbody>
 </table>
@@ -736,11 +761,22 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <div class="section" id="id5">
 <h4>Returns<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thingpersisted">ThingPersisted</a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
 </div>
 <div class="section" id="id6">
 <h4>Defined in<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/build.ts#L176">src/thing/build.ts:176</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/182ea4b/src/thing/build.ts#L208">src/thing/build.ts:208</a></p>
 <p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thinglocal">ThingLocal</a>&gt;</p>
+<p>Create a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can create a new Thing and initialise several properties as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing({ name: &quot;profile-vincent&quot; })
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
 </div>
 <div class="section" id="id7">
 <h4>Parameters<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
@@ -748,11 +784,13 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
 <th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
 <td class="text-align:left"><p><a class="reference external" href="thing_thing.html#createthinglocaloptions">CreateThingLocalOptions</a></p></td>
+<td class="text-align:left"><p>Options used to initialise a new Thing.</p></td>
 </tr>
 </tbody>
 </table>
@@ -760,11 +798,22 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <div class="section" id="id8">
 <h4>Returns<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thinglocal">ThingLocal</a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
 </div>
 <div class="section" id="id9">
 <h4>Defined in<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/build.ts#L177">src/thing/build.ts:177</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/182ea4b/src/thing/build.ts#L225">src/thing/build.ts:225</a></p>
 <p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thingpersisted">ThingPersisted</a>&gt;</p>
+<p>Create a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can create a new Thing and initialise several properties as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing({ url: &quot;https://example.pod/profile#vincent&quot; })
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
 </div>
 <div class="section" id="id10">
 <h4>Parameters<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
@@ -772,11 +821,13 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
 <th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
 <td class="text-align:left"><p><a class="reference external" href="thing_thing.html#createthingpersistedoptions">CreateThingPersistedOptions</a></p></td>
+<td class="text-align:left"><p>Optionally pass an existing <a class="reference external" href="interfaces.html#thing">Thing</a> to modify the properties of. If left empty, <code class="docutils literal notranslate"><span class="pre">buildThing</span></code> will initialise a new Thing.</p></td>
 </tr>
 </tbody>
 </table>
@@ -784,19 +835,31 @@ properties using <code class="docutils literal notranslate"><span class="pre">.b
 <div class="section" id="id11">
 <h4>Returns<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thingpersisted">ThingPersisted</a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
 </div>
 <div class="section" id="id12">
 <h4>Defined in<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/build.ts#L180">src/thing/build.ts:180</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/182ea4b/src/thing/build.ts#L244">src/thing/build.ts:244</a></p>
 <p>▸ <strong>buildThing</strong>(): <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thinglocal">ThingLocal</a>&gt;</p>
+<p>Create a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can create a new Thing and initialise several properties as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing()
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
 </div>
 <div class="section" id="id13">
 <h4>Returns<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>&lt;<a class="reference external" href="interfaces.html#thinglocal">ThingLocal</a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
 </div>
 <div class="section" id="id14">
 <h4>Defined in<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/1f40743/src/thing/build.ts#L183">src/thing/build.ts:183</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/182ea4b/src/thing/build.ts#L262">src/thing/build.ts:262</a></p>
 </div>
 </div>
 </div>
