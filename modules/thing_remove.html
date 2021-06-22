@@ -315,11 +315,15 @@
    Module: thing/thing
   </a>
  </li>
+</ul>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../interfaces/access_universal.access.html">
    Interface: Access
   </a>
  </li>
+</ul>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../classes/interfaces.solidclienterror.html">
    Class: SolidClientError
@@ -348,6 +352,13 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../classes/thing_thing.validvalueurlexpectederror.html">
    Class: ValidValueUrlExpectedError
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../modules.html">
+   Modules Index
   </a>
  </li>
 </ul>
@@ -682,7 +693,7 @@
   
               <div>
                 
-  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / thing/remove</p>
+  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / <a class="reference internal" href="../modules.html"><span class="doc std std-doc">Modules</span></a> / thing/remove</p>
 <div class="tex2jax_ignore mathjax_ignore section" id="module-thing-remove">
 <h1>Module: thing/remove<a class="headerlink" href="#module-thing-remove" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="table-of-contents">
@@ -712,10 +723,6 @@
 <div class="section" id="removeoftype">
 <h3>RemoveOfType<a class="headerlink" href="#removeoftype" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>RemoveOfType</strong>&lt;Type&gt;: &lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <code class="docutils literal notranslate"><span class="pre">T</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url">Url</a> | <a class="reference external" href="interfaces.html#urlstring">UrlString</a>, <code class="docutils literal notranslate"><span class="pre">value</span></code>: <code class="docutils literal notranslate"><span class="pre">Type</span></code>) =&gt; <code class="docutils literal notranslate"><span class="pre">T</span></code></p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">param</span></code></strong> Thing to remove a value from.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">param</span></code></strong> Property for which to remove the given value.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">param</span></code></strong> Value to remove from <code class="docutils literal notranslate"><span class="pre">thing</span></code> for the given <code class="docutils literal notranslate"><span class="pre">property</span></code>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">returns</span></code></strong> A new Thing equal to the input Thing with the given value removed for the given Property.</p>
 <div class="section" id="type-parameters">
 <h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -753,17 +760,21 @@
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
 <th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
 <td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
+<td class="text-align:left"><p>Thing to remove a value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
 <td class="text-align:left"><p><a class="reference external" href="interfaces.html#url">Url</a> | <a class="reference external" href="interfaces.html#urlstring">UrlString</a></p></td>
+<td class="text-align:left"><p>Property for which to remove the given value.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">value</span></code></p></td>
 <td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
+<td class="text-align:left"><p>Value to remove from <code class="docutils literal notranslate"><span class="pre">thing</span></code> for the given <code class="docutils literal notranslate"><span class="pre">property</span></code>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -771,11 +782,12 @@
 <div class="section" id="returns">
 <h5>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h5>
 <p><code class="docutils literal notranslate"><span class="pre">T</span></code></p>
+<p>A new Thing equal to the input Thing with the given value removed for the given Property.</p>
 </div>
 </div>
 <div class="section" id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L414">src/thing/remove.ts:414</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L414">src/thing/remove.ts:414</a></p>
 </div>
 </div>
 </div>
@@ -829,7 +841,7 @@
 </div>
 <div class="section" id="id7">
 <h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L54">src/thing/remove.ts:54</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L54">src/thing/remove.ts:54</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -885,7 +897,7 @@
 </div>
 <div class="section" id="id11">
 <h4>Defined in<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L137">src/thing/remove.ts:137</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L137">src/thing/remove.ts:137</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -941,7 +953,7 @@
 </div>
 <div class="section" id="id15">
 <h4>Defined in<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L161">src/thing/remove.ts:161</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L161">src/thing/remove.ts:161</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -997,7 +1009,7 @@
 </div>
 <div class="section" id="id19">
 <h4>Defined in<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L182">src/thing/remove.ts:182</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L182">src/thing/remove.ts:182</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1053,7 +1065,7 @@
 </div>
 <div class="section" id="id23">
 <h4>Defined in<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L202">src/thing/remove.ts:202</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L202">src/thing/remove.ts:202</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1109,7 +1121,7 @@
 </div>
 <div class="section" id="id27">
 <h4>Defined in<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L283">src/thing/remove.ts:283</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L283">src/thing/remove.ts:283</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1169,7 +1181,7 @@
 </div>
 <div class="section" id="id31">
 <h4>Defined in<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L223">src/thing/remove.ts:223</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L223">src/thing/remove.ts:223</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1225,7 +1237,7 @@
 </div>
 <div class="section" id="id35">
 <h4>Defined in<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/2ba0b23/src/thing/remove.ts#L83">src/thing/remove.ts:83</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/b9363bb/src/thing/remove.ts#L83">src/thing/remove.ts:83</a></p>
 </div>
 </div>
 </div>
