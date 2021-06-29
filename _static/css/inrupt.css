@@ -285,6 +285,18 @@ a.internal:hover > code.std-envvar > span.pre {
 }
 
 
+/* Make API inlink links same as other links*/
+
+a.external > code.docutils > span.pre {
+   color: #005b81;
+   font-weight: 400;
+   line-height: 1.65; 
+}
+
+a.external:hover > code.docutils > span.pre {
+   color: rgba(var(--pst-color-link-hover),1);
+}
+
 
 /* Need styling for :guilabel: directives */
 
