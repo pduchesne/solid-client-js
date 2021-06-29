@@ -153,21 +153,21 @@
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/inrupt" rel="noopener" target="_blank" title="Inrupt on Twitter">
-            <span><i class="fab fa-twitter-square"></i></span>
-            <label class="sr-only">Inrupt on Twitter</label>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/company/inrupt/" rel="noopener" target="_blank" title="Inrupt on LinkedIn">
-            <span><i class="fab fa-linkedin"></i></span>
-            <label class="sr-only">Inrupt on LinkedIn</label>
+          <a class="nav-link" href="https://inrupt.atlassian.net/servicedesk" rel="noopener" target="_blank" title="Support Desk">
+            <span><i class="fas fa-tools"></i></span>
+            <label class="sr-only">Support Desk</label>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://forum.solidproject.org/" rel="noopener" target="_blank" title="Solid forum">
             <span><i class="fas fa-users"></i></span>
             <label class="sr-only">Solid forum</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.com/blog" rel="noopener" target="_blank" title="Inrupt Blog">
+            <span><i class="fas fa-blog"></i></span>
+            <label class="sr-only">Inrupt Blog</label>
           </a>
         </li>
       </ul>
@@ -605,7 +605,7 @@ attach credentials to requests that need authentication.</p></li>
 </div>
 <div class="section" id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/70ea809/src/resource/file.ts#L49">src/resource/file.ts:49</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ff215db/src/resource/file.ts#L49">src/resource/file.ts:49</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -619,7 +619,7 @@ attach credentials to requests that need authentication.</p></li>
 <p>Options available when writing a file.</p>
 <div class="section" id="id2">
 <h4>Defined in<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/70ea809/src/resource/file.ts#L231">src/resource/file.ts:231</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ff215db/src/resource/file.ts#L265">src/resource/file.ts:265</a></p>
 </div>
 </div>
 </div>
@@ -633,6 +633,12 @@ attach credentials to requests that need authentication.</p></li>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Deletes a file at a given URL.</p>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="nx">deleteFile</span><span class="p">(</span> <span class="s2">&quot;https://pod.example.com/some/file&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">});</span>
+</pre></div>
+</div>
+<p>For additional examples, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#delete-a-file">Read/Write Files</a>.</p>
 <div class="section" id="parameters">
 <h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -660,7 +666,7 @@ attach credentials to requests that need authentication.</p></li>
 </div>
 <div class="section" id="id4">
 <h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/70ea809/src/resource/file.ts#L113">src/resource/file.ts:113</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ff215db/src/resource/file.ts#L131">src/resource/file.ts:131</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -672,6 +678,12 @@ attach credentials to requests that need authentication.</p></li>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Retrieves a file from a URL and returns the file as a blob.</p>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">fileBlob</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">getFile</span><span class="p">(</span><span class="s2">&quot;https://pod.example.com/some/file&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">});</span>
+</pre></div>
+</div>
+<p>For additional examples, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#retrieve-a-file">Read/Write Files</a>.</p>
 <div class="section" id="id5">
 <h4>Parameters<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -700,7 +712,7 @@ attach credentials to requests that need authentication.</p></li>
 </div>
 <div class="section" id="id7">
 <h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/70ea809/src/resource/file.ts#L78">src/resource/file.ts:78</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ff215db/src/resource/file.ts#L87">src/resource/file.ts:87</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -711,18 +723,27 @@ attach credentials to requests that need authentication.</p></li>
 <p class="admonition-title">Note</p>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
-<p>Saves a file at a given URL, replacing any previous content.</p>
-<p>The Solid server will create any intermediary Containers that do not exist yet, so they do not
-need to be created in advance. For example, if the target URL is
-https://example.pod/container/resource and https://example.pod/container/ does not exist yet,
-it will exist after this function resolves successfully.</p>
-<p>If you know the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
-of the file you are attempting to write, then you should provide this in the
-<code class="docutils literal notranslate"><span class="pre">options</span></code> parameter. For example, if you know your file is a JPEG image,
-then you should provide the media type <code class="docutils literal notranslate"><span class="pre">image/jpeg</span></code>. If you don’t know, or
-don’t provide a media type, a default type of <code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code> will
-be applied (which indicates that the file should be regarded as pure binary
-data).</p>
+<p>Saves a file at a given URL. If a file already exists at the URL,
+the function overwrites the existing file.</p>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">savedFile</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">overwriteFile</span><span class="p">(</span>
+  <span class="s2">&quot;https://pod.example.com/some/container/myFile.txt&quot;</span><span class="p">,</span>
+  <span class="k">new</span> <span class="nx">Blob</span><span class="p">([</span><span class="s2">&quot;This is a plain piece of text&quot;</span><span class="p">],</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;plain/text&quot;</span> <span class="p">}),</span>
+  <span class="p">{</span> <span class="nx">contentType</span><span class="o">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">,</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>For additional example, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#write-a-file-to-a-specific-url">Read/Write Files</a>.</p>
+<p><em>Recommended:</em> In the <code class="docutils literal notranslate"><span class="pre">options</span></code> parameter, you can specify the
+<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
+of the file in the <code class="docutils literal notranslate"><span class="pre">contentType</span></code>.  If unspecified, the function uses the default type of
+<code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code>, indicating a binary data file.</p>
+<p>When saving a file with <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>, the Solid server creates any
+intermediary Containers as needed; i.e., the Containers do not
+need to be created in advance. For example, when saving a file to the target URL of
+https://example.pod/container/resource, if https://example.pod/container/ does not exist,
+the container is created as part of the save.</p>
 <div class="section" id="type-parameters">
 <h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -758,7 +779,7 @@ data).</p>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
 <td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference external" href="resource_file.html#writefileoptions"><code class="docutils literal notranslate"><span class="pre">WriteFileOptions</span></code></a>&gt;</p></td>
-<td class="text-align:left"><p>Additional parameters for file creation (e.g. a slug, or media type).</p></td>
+<td class="text-align:left"><p>Additional parameters for file creation (e.g., media type).</p></td>
 </tr>
 </tbody>
 </table>
@@ -769,7 +790,7 @@ data).</p>
 </div>
 <div class="section" id="id10">
 <h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/70ea809/src/resource/file.ts#L267">src/resource/file.ts:267</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ff215db/src/resource/file.ts#L313">src/resource/file.ts:313</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -780,27 +801,41 @@ data).</p>
 <p class="admonition-title">Note</p>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
-<p>Saves a file in a folder associated with the given URL. The final filename may or may
-not be the given <code class="docutils literal notranslate"><span class="pre">slug</span></code>.</p>
-<p>If you know the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
-of the file you are attempting to save, then you should provide this in the
-<code class="docutils literal notranslate"><span class="pre">options</span></code> parameter. For example, if you know your file is a JPEG image,
-then you should provide the media type <code class="docutils literal notranslate"><span class="pre">image/jpeg</span></code>. If you don’t know, or
-don’t provide a media type, a default type of <code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code> will
-be applied (which indicates that the file should be regarded as pure binary
-data).</p>
-<p>The Container at the given URL should already exist; if it does not, the returned Promise will
-be rejected. You can initialise it first using <a class="reference external" href="resource_soliddataset.html#createcontainerat">createContainerAt</a>, or directly save the file
-at the desired location using <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>.</p>
-<p>This function is primarily useful if the current user does not have access to change existing files in
-a Container, but is allowed to add new files; in other words, they have Append, but not Write
-access to a Container. This is useful in situations where someone wants to allow others to,
-for example, send notifications to their Pod, but not to view or delete existing notifications.
-You can pass a suggestion for the new Resource’s name, but the server may decide to give it
-another name — for example, if a Resource with that name already exists inside the given
-Container.
-If the user does have access to write directly to a given location, <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>
-will do the job just fine, and does not require the parent Container to exist in advance.</p>
+<p>Saves a file in an existing folder/Container associated with the given URL.</p>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">savedFile</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">saveFileInContainer</span><span class="p">(</span>
+  <span class="s2">&quot;https://pod.example.com/some/existing/container/&quot;</span><span class="p">,</span>
+  <span class="k">new</span> <span class="nx">Blob</span><span class="p">([</span><span class="s2">&quot;This is a plain piece of text&quot;</span><span class="p">],</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;plain/text&quot;</span> <span class="p">}),</span>
+  <span class="p">{</span> <span class="nx">slug</span><span class="o">:</span> <span class="s2">&quot;suggestedFileName.txt&quot;</span><span class="p">,</span> <span class="nx">contentType</span><span class="o">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">,</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>For additional example, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#save-a-file-into-an-existing-container">Read/Write Files</a>.</p>
+<p>In the <code class="docutils literal notranslate"><span class="pre">options</span></code> parameter,</p>
+<ul class="simple">
+<li><p>You can suggest a file name in the <code class="docutils literal notranslate"><span class="pre">slug</span></code> field.  However, the Solid
+Server may or may not use the suggested <code class="docutils literal notranslate"><span class="pre">slug</span></code> as the file name.</p></li>
+<li><p><em>Recommended:</em> You can specify the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
+of the file in the <code class="docutils literal notranslate"><span class="pre">contentType</span></code>.  If unspecified, the function uses the default type of
+<code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code>, indicating a binary data file.</p></li>
+</ul>
+<p>The function saves a file into an <em>existing</em> Container. If the
+Container does not exist, either:</p>
+<ul class="simple">
+<li><p>Create the Container first using <a class="reference external" href="resource_soliddataset.html#createcontainerat">createContainerAt</a>, and then
+use the function, or</p></li>
+<li><p>Use <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a> to save the file. <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a> creates
+the Containers in the saved file path as needed.</p></li>
+</ul>
+<p>Users who only have <code class="docutils literal notranslate"><span class="pre">Append</span></code> but not <code class="docutils literal notranslate"><span class="pre">Write</span></code> access to a Container
+can use <a class="reference external" href="resource_file.html#savefileincontainer">saveFileInContainer</a> to save new files to the Container.
+That is, <a class="reference external" href="resource_file.html#savefileincontainer">saveFileInContainer</a> is useful in situations where users
+can add new files to a Container but not change existing files in
+the Container, such as users given access to send notifications to
+another’s Pod but not to view or delete existing notifications in that Pod.</p>
+<p>Users with <code class="docutils literal notranslate"><span class="pre">Write</span></code> access to the given folder/Container may prefer to
+use <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>.</p>
 <div class="section" id="id11">
 <h4>Type parameters<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -828,7 +863,7 @@ will do the job just fine, and does not require the parent Container to exist in
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">folderUrl</span></code></p></td>
 <td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
-<td class="text-align:left"><p>The URL of the folder where the new file is saved.</p></td>
+<td class="text-align:left"><p>The URL of an existing folder where the new file is saved.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">file</span></code></p></td>
 <td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">FileExt</span></code></p></td>
@@ -848,7 +883,7 @@ will do the job just fine, and does not require the parent Container to exist in
 </div>
 <div class="section" id="id14">
 <h4>Defined in<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/70ea809/src/resource/file.ts#L188">src/resource/file.ts:188</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/ff215db/src/resource/file.ts#L222">src/resource/file.ts:222</a></p>
 </div>
 </div>
 </div>
