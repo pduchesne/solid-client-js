@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Class: ValidPropertyUrlExpectedError &#8212; Inrupt solid-client API Documentation</title>
+    <title>Class: ThingExpectedError &#8212; Inrupt solid-client API Documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -34,8 +34,8 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class: ValidThingUrlExpectedError" href="thing_thing.validthingurlexpectederror.html" />
-    <link rel="prev" title="Class: ThingExpectedError" href="thing_thing.thingexpectederror.html" />
+    <link rel="next" title="Class: ValidPropertyUrlExpectedError" href="thing_thing.ValidPropertyUrlExpectedError.html" />
+    <link rel="prev" title="Class: FetchError" href="resource_resource.FetchError.html" />
   
   <meta name="robots" content="index" />
   
@@ -55,7 +55,7 @@
   <script type="text/javascript">
     window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
       fieldValues: {
-        description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/classes/thing_thing.validpropertyurlexpectederror/ \n'
+        description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/classes/thing_thing.ThingExpectedError/ \n'
       }
     });
   </script><!-- Matomo -->
@@ -271,7 +271,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../modules/resource_soliddataset.html">
+  <a class="reference internal" href="../modules/resource_solidDataset.html">
    Module: resource/solidDataset
   </a>
  </li>
@@ -313,39 +313,39 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../interfaces/access_universal.access.html">
+  <a class="reference internal" href="../interfaces/access_universal.Access.html">
    Interface: Access
   </a>
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="interfaces.solidclienterror.html">
+  <a class="reference internal" href="interfaces.SolidClientError.html">
    Class: SolidClientError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="resource_resource.fetcherror.html">
+  <a class="reference internal" href="resource_resource.FetchError.html">
    Class: FetchError
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="thing_thing.thingexpectederror.html">
-   Class: ThingExpectedError
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
+   Class: ThingExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_thing.ValidPropertyUrlExpectedError.html">
    Class: ValidPropertyUrlExpectedError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="thing_thing.validthingurlexpectederror.html">
+  <a class="reference internal" href="thing_thing.ValidThingUrlExpectedError.html">
    Class: ValidThingUrlExpectedError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="thing_thing.validvalueurlexpectederror.html">
+  <a class="reference internal" href="thing_thing.ValidValueUrlExpectedError.html">
    Class: ValidValueUrlExpectedError
   </a>
  </li>
@@ -426,8 +426,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#receivedproperty">
-     receivedProperty
+    <a class="reference internal nav-link" href="#receivedvalue">
+     receivedValue
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -465,16 +465,17 @@
   
               <div>
                 
-  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / <a class="reference internal" href="../modules/thing_thing.html"><span class="doc std std-doc">thing/thing</span></a> / ValidPropertyUrlExpectedError</p>
-<div class="tex2jax_ignore mathjax_ignore section" id="class-validpropertyurlexpectederror">
-<h1>Class: ValidPropertyUrlExpectedError<a class="headerlink" href="#class-validpropertyurlexpectederror" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="../modules/thing_thing.html"><span class="doc std std-doc">thing/thing</span></a>.ValidPropertyUrlExpectedError</p>
-<p>This error is thrown when a function expected to receive a valid URL to identify a property but received something else.</p>
+  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / <a class="reference internal" href="../modules/thing_thing.html"><span class="doc std std-doc">thing/thing</span></a> / ThingExpectedError</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="class-thingexpectederror">
+<h1>Class: ThingExpectedError<a class="headerlink" href="#class-thingexpectederror" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="../modules/thing_thing.html"><span class="doc std std-doc">thing/thing</span></a>.ThingExpectedError</p>
+<p>This error is thrown when a function expected to receive a <a class="reference external" href="../modules/interfaces.html#thing">Thing</a> but received something else.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.2.0</p>
 <div class="section" id="hierarchy">
 <h2>Hierarchy<a class="headerlink" href="#hierarchy" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p><a class="reference internal" href="interfaces.solidclienterror.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">SolidClientError</span></code></span></a></p>
-<p>↳ <strong><code class="docutils literal notranslate"><span class="pre">ValidPropertyUrlExpectedError</span></code></strong></p>
+<li><p><a class="reference internal" href="interfaces.SolidClientError.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">SolidClientError</span></code></span></a></p>
+<p>↳ <strong><code class="docutils literal notranslate"><span class="pre">ThingExpectedError</span></code></strong></p>
 </li>
 </ul>
 </div>
@@ -483,13 +484,13 @@
 <div class="section" id="constructors">
 <h3>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="thing_thing.validpropertyurlexpectederror.html#constructor">constructor</a></p></li>
+<li><p><a class="reference external" href="thing_thing.ThingExpectedError.html#constructor">constructor</a></p></li>
 </ul>
 </div>
 <div class="section" id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="thing_thing.validpropertyurlexpectederror.html#receivedproperty">receivedProperty</a></p></li>
+<li><p><a class="reference external" href="thing_thing.ThingExpectedError.html#receivedvalue">receivedValue</a></p></li>
 </ul>
 </div>
 </div>
@@ -497,7 +498,7 @@
 <h2>Constructors<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="constructor">
 <h3>constructor<a class="headerlink" href="#constructor" title="Permalink to this headline">¶</a></h3>
-<p>• <strong>new ValidPropertyUrlExpectedError</strong>(<code class="docutils literal notranslate"><span class="pre">receivedValue</span></code>)</p>
+<p>• <strong>new ThingExpectedError</strong>(<code class="docutils literal notranslate"><span class="pre">receivedValue</span></code>)</p>
 <div class="section" id="parameters">
 <h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -515,22 +516,22 @@
 </div>
 <div class="section" id="overrides">
 <h4>Overrides<a class="headerlink" href="#overrides" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference internal" href="interfaces.solidclienterror.html"><span class="doc std std-doc">SolidClientError</span></a>.<a class="reference external" href="interfaces.solidclienterror.html#constructor">constructor</a></p>
+<p><a class="reference internal" href="interfaces.SolidClientError.html"><span class="doc std std-doc">SolidClientError</span></a>.<a class="reference external" href="interfaces.SolidClientError.html#constructor">constructor</a></p>
 </div>
 <div class="section" id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/thing/thing.ts#L410">src/thing/thing.ts:410</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/thing/thing.ts#L399">src/thing/thing.ts:399</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="id2">
 <h2>Properties<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="receivedproperty">
-<h3>receivedProperty<a class="headerlink" href="#receivedproperty" title="Permalink to this headline">¶</a></h3>
-<p>• <code class="docutils literal notranslate"><span class="pre">Readonly</span></code> <strong>receivedProperty</strong>: <code class="docutils literal notranslate"><span class="pre">unknown</span></code></p>
+<div class="section" id="receivedvalue">
+<h3>receivedValue<a class="headerlink" href="#receivedvalue" title="Permalink to this headline">¶</a></h3>
+<p>• <code class="docutils literal notranslate"><span class="pre">Readonly</span></code> <strong>receivedValue</strong>: <code class="docutils literal notranslate"><span class="pre">unknown</span></code></p>
 <div class="section" id="id3">
 <h4>Defined in<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/thing/thing.ts#L410">src/thing/thing.ts:410</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/thing/thing.ts#L397">src/thing/thing.ts:397</a></p>
 </div>
 </div>
 </div>
@@ -544,8 +545,8 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="thing_thing.thingexpectederror.html" title="previous page">Class: ThingExpectedError</a>
-    <a class='right-next' id="next-link" href="thing_thing.validthingurlexpectederror.html" title="next page">Class: ValidThingUrlExpectedError</a>
+    <a class='left-prev' id="prev-link" href="resource_resource.FetchError.html" title="previous page">Class: FetchError</a>
+    <a class='right-next' id="next-link" href="thing_thing.ValidPropertyUrlExpectedError.html" title="next page">Class: ValidPropertyUrlExpectedError</a>
 
               </div>
               

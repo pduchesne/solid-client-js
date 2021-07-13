@@ -271,7 +271,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="resource_soliddataset.html">
+  <a class="reference internal" href="resource_solidDataset.html">
    Module: resource/solidDataset
   </a>
  </li>
@@ -313,39 +313,39 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../interfaces/access_universal.access.html">
+  <a class="reference internal" href="../interfaces/access_universal.Access.html">
    Interface: Access
   </a>
  </li>
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../classes/interfaces.solidclienterror.html">
+  <a class="reference internal" href="../classes/interfaces.SolidClientError.html">
    Class: SolidClientError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../classes/resource_resource.fetcherror.html">
+  <a class="reference internal" href="../classes/resource_resource.FetchError.html">
    Class: FetchError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../classes/thing_thing.thingexpectederror.html">
+  <a class="reference internal" href="../classes/thing_thing.ThingExpectedError.html">
    Class: ThingExpectedError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../classes/thing_thing.validpropertyurlexpectederror.html">
+  <a class="reference internal" href="../classes/thing_thing.ValidPropertyUrlExpectedError.html">
    Class: ValidPropertyUrlExpectedError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../classes/thing_thing.validthingurlexpectederror.html">
+  <a class="reference internal" href="../classes/thing_thing.ValidThingUrlExpectedError.html">
    Class: ValidThingUrlExpectedError
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../classes/thing_thing.validvalueurlexpectederror.html">
+  <a class="reference internal" href="../classes/thing_thing.ValidValueUrlExpectedError.html">
    Class: ValidValueUrlExpectedError
   </a>
  </li>
@@ -729,7 +729,7 @@
 <div class="section" id="interfaces">
 <h3>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc">Access</span></a></p></li>
+<li><p><a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc">Access</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="functions">
@@ -753,7 +753,7 @@
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="getaccessfor">
 <h3>getAccessFor<a class="headerlink" href="#getaccessfor" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">actor</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">actor</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for a given actor (Agent or Group).</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -804,13 +804,13 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="returns">
 <h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access the given Agent or Group has.</p>
 </div>
 <div class="section" id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/for.ts#L68">src/access/for.ts:68</a></p>
-<p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/for.ts#L68">src/access/for.ts:68</a></p>
+<p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for everyone.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -858,13 +858,13 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id3">
 <h4>Returns<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access have been granted to the general public.</p>
 </div>
 <div class="section" id="id4">
 <h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/for.ts#L100">src/access/for.ts:100</a></p>
-<p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">actor?</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/for.ts#L100">src/access/for.ts:100</a></p>
+<p>▸ <strong>getAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">actor?</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 </div>
 <div class="section" id="id5">
 <h4>Parameters<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
@@ -892,17 +892,17 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id6">
 <h4>Returns<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 </div>
 <div class="section" id="id7">
 <h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/for.ts#L105">src/access/for.ts:105</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/for.ts#L105">src/access/for.ts:105</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getaccessforall">
 <h3>getAccessForAll<a class="headerlink" href="#getaccessforall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getAccessForAll</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>getAccessForAll</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for a given set of actors: all Agents
 or all Groups.</p>
 <p>This function works with Solid Pods that implement either the Web Access
@@ -954,18 +954,18 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id9">
 <h4>Returns<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access is set for the given resource, grouped by resp. Agent or Group.</p>
 </div>
 <div class="section" id="id10">
 <h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/for.ts#L173">src/access/for.ts:173</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/for.ts#L173">src/access/for.ts:173</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getagentaccess">
 <h3>getAgentAccess<a class="headerlink" href="#getagentaccess" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getAgentAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>getAgentAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for a given Agent.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1016,17 +1016,17 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id12">
 <h4>Returns<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 </div>
 <div class="section" id="id13">
 <h4>Defined in<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L93">src/access/universal.ts:93</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L93">src/access/universal.ts:93</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getagentaccessall">
 <h3>getAgentAccessAll<a class="headerlink" href="#getagentaccessall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getAgentAccessAll</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#webid"><code class="docutils literal notranslate"><span class="pre">WebId</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>getAgentAccessAll</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#webid"><code class="docutils literal notranslate"><span class="pre">WebId</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for all Agents with respect to a given
 Resource.</p>
 <p>This function works with Solid Pods that implement either the Web Access
@@ -1074,18 +1074,18 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id15">
 <h4>Returns<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#webid"><code class="docutils literal notranslate"><span class="pre">WebId</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#webid"><code class="docutils literal notranslate"><span class="pre">WebId</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>The access information to the Resource, grouped by Agent.</p>
 </div>
 <div class="section" id="id16">
 <h4>Defined in<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L201">src/access/universal.ts:201</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L201">src/access/universal.ts:201</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getgroupaccess">
 <h3>getGroupAccess<a class="headerlink" href="#getgroupaccess" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getGroupAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>getGroupAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for a given Group.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1136,17 +1136,17 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id18">
 <h4>Returns<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 </div>
 <div class="section" id="id19">
 <h4>Defined in<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L239">src/access/universal.ts:239</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L239">src/access/universal.ts:239</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getgroupaccessall">
 <h3>getGroupAccessAll<a class="headerlink" href="#getgroupaccessall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getGroupAccessAll</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>getGroupAccessAll</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for all Groups with respect to a given
 Resource.</p>
 <p>This function works with Solid Pods that implement either the Web Access
@@ -1194,18 +1194,18 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id21">
 <h4>Returns<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>, <a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt; | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>The access information to the Resource, sorted by Group.</p>
 </div>
 <div class="section" id="id22">
 <h4>Defined in<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L279">src/access/universal.ts:279</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L279">src/access/universal.ts:279</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="getpublicaccess">
 <h3>getPublicAccess<a class="headerlink" href="#getpublicaccess" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getPublicAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>getPublicAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Get an overview of what access is defined for everyone.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1252,17 +1252,17 @@ Resource, this function will resolve to <code class="docutils literal notranslat
 </div>
 <div class="section" id="id24">
 <h4>Returns<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 </div>
 <div class="section" id="id25">
 <h4>Defined in<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L384">src/access/universal.ts:384</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L384">src/access/universal.ts:384</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="setaccessfor">
 <h3>setAccessFor<a class="headerlink" href="#setaccessfor" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">actor</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">actor</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Set access to a Resource for a specific Actor (Agent or Group).</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1311,7 +1311,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 <td class="text-align:left"><p>type of actor whose access is being read.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
 <td class="text-align:left"><p>What access permissions you want to set for the given Agent to the given Resource. Possible properties are <code class="docutils literal notranslate"><span class="pre">read</span></code>, <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">write</span></code>, <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code>: set to <code class="docutils literal notranslate"><span class="pre">true</span></code> to allow, to <code class="docutils literal notranslate"><span class="pre">false</span></code> to stop allowing, or <code class="docutils literal notranslate"><span class="pre">undefined</span></code> to leave unchanged. Take note that <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code> can not have distinct values for a Pod server implementing Web Access Control; trying this will throw an error.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">actor</span></code></p></td>
@@ -1327,13 +1327,13 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </div>
 <div class="section" id="id27">
 <h4>Returns<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access has been set for the given Agent explicitly.</p>
 </div>
 <div class="section" id="id28">
 <h4>Defined in<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/for.ts#L224">src/access/for.ts:224</a></p>
-<p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/for.ts#L224">src/access/for.ts:224</a></p>
+<p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Set access to a Resource for everyone.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1383,7 +1383,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 <td class="text-align:left"><p>type of actor whose access is being read.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
 <td class="text-align:left"><p>What access permissions you want to set for the given Agent to the given Resource. Possible properties are <code class="docutils literal notranslate"><span class="pre">read</span></code>, <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">write</span></code>, <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code>: set to <code class="docutils literal notranslate"><span class="pre">true</span></code> to allow, to <code class="docutils literal notranslate"><span class="pre">false</span></code> to stop allowing, or <code class="docutils literal notranslate"><span class="pre">undefined</span></code> to leave unchanged. Take note that <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code> can not have distinct values for a Pod server implementing Web Access Control; trying this will throw an error.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options?</span></code></p></td>
@@ -1395,13 +1395,13 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </div>
 <div class="section" id="id30">
 <h4>Returns<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access has been set for the given Agent explicitly.</p>
 </div>
 <div class="section" id="id31">
 <h4>Defined in<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/for.ts#L267">src/access/for.ts:267</a></p>
-<p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">actor?</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/for.ts#L267">src/access/for.ts:267</a></p>
+<p>▸ <strong>setAccessFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">actorType</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">actor?</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 </div>
 <div class="section" id="id32">
 <h4>Parameters<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h4>
@@ -1419,7 +1419,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 <td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Actor</span></code></p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">actor?</span></code></p></td>
 <td class="text-align:left"><p><a class="reference external" href="interfaces.html#webid"><code class="docutils literal notranslate"><span class="pre">WebId</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | typeof <code class="docutils literal notranslate"><span class="pre">internal_defaultFetchOptions</span></code></p></td>
@@ -1432,17 +1432,17 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </div>
 <div class="section" id="id33">
 <h4>Returns<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 </div>
 <div class="section" id="id34">
 <h4>Defined in<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/for.ts#L273">src/access/for.ts:273</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/for.ts#L273">src/access/for.ts:273</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="setagentaccess">
 <h3>setAgentAccess<a class="headerlink" href="#setagentaccess" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>setAgentAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>setAgentAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Set access to a Resource for a specific Agent.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1490,7 +1490,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 <td class="text-align:left"><p>WebID of the Agent you want to set access for.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
 <td class="text-align:left"><p>What access permissions you want to set for the given Agent to the given Resource. Possible properties are <code class="docutils literal notranslate"><span class="pre">read</span></code>, <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">write</span></code>, <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code>: set to <code class="docutils literal notranslate"><span class="pre">true</span></code> to allow, to <code class="docutils literal notranslate"><span class="pre">false</span></code> to stop allowing, or <code class="docutils literal notranslate"><span class="pre">undefined</span></code> to leave unchanged. Take note that <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code> can not have distinct values for a Pod server implementing Web Access Control; trying this will throw an error.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
@@ -1506,18 +1506,18 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </div>
 <div class="section" id="id36">
 <h4>Returns<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access has been set for the given Agent explicitly.</p>
 </div>
 <div class="section" id="id37">
 <h4>Defined in<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L142">src/access/universal.ts:142</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L142">src/access/universal.ts:142</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="setgroupaccess">
 <h3>setGroupAccess<a class="headerlink" href="#setgroupaccess" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>setGroupAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">groupUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>setGroupAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">groupUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Set access to a Resource for a specific Group.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1565,7 +1565,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 <td class="text-align:left"><p>URL of the Group you want to set access for.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
 <td class="text-align:left"><p>What access permissions you want to set for the given Group to the given Resource. Possible properties are <code class="docutils literal notranslate"><span class="pre">read</span></code>, <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">write</span></code>, <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code>: set to <code class="docutils literal notranslate"><span class="pre">true</span></code> to allow, to <code class="docutils literal notranslate"><span class="pre">false</span></code> to stop allowing, or <code class="docutils literal notranslate"><span class="pre">undefined</span></code> to leave unchanged. Take note that <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code> can not have distinct values for a Pod server implementing Web Access Control; trying this will throw an error.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
@@ -1581,18 +1581,18 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </div>
 <div class="section" id="id39">
 <h4>Returns<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access has been set for the given Group explicitly.</p>
 </div>
 <div class="section" id="id40">
 <h4>Defined in<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L327">src/access/universal.ts:327</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L327">src/access/universal.ts:327</a></p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="setpublicaccess">
 <h3>setPublicAccess<a class="headerlink" href="#setpublicaccess" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>setPublicAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p>▸ <strong>setPublicAccess</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>Set access to a Resource for everybody.</p>
 <p>This function works with Solid Pods that implement either the Web Access
 Control spec or the Access Control Policies proposal, with some caveats:</p>
@@ -1636,7 +1636,7 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 <td class="text-align:left"><p>URL of the Resource you want to change public access to.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a>&gt;</p></td>
 <td class="text-align:left"><p>What access permissions you want to set for everybody to the given Resource. Possible properties are <code class="docutils literal notranslate"><span class="pre">read</span></code>, <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">write</span></code>, <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code>: set to <code class="docutils literal notranslate"><span class="pre">true</span></code> to allow, to <code class="docutils literal notranslate"><span class="pre">false</span></code> to stop allowing, or <code class="docutils literal notranslate"><span class="pre">undefined</span></code> to leave unchanged. Take note that <code class="docutils literal notranslate"><span class="pre">controlRead</span></code> and <code class="docutils literal notranslate"><span class="pre">controlWrite</span></code> can not have distinct values for a Pod server implementing Web Access Control; trying this will throw an error.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
@@ -1652,12 +1652,12 @@ to have Pods implementing WAC, be sure to pass the same value for both.</p></li>
 </div>
 <div class="section" id="id42">
 <h4>Returns<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference internal" href="../interfaces/access_universal.Access.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">Access</span></code></span></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code>&gt;</p>
 <p>What access has been set for everybody explicitly.</p>
 </div>
 <div class="section" id="id43">
 <h4>Defined in<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/baebfa5/src/access/universal.ts#L431">src/access/universal.ts:431</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/809f037/src/access/universal.ts#L431">src/access/universal.ts:431</a></p>
 </div>
 </div>
 </div>
