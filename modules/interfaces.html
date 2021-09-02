@@ -34,7 +34,7 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Module: resource/file" href="resource_file.html" />
+    <link rel="next" title="Module: profile/jwks" href="profile_jwks.html" />
     <link rel="prev" title="Module: acp/rule" href="acp_rule.html" />
   
   <meta name="robots" content="index" />
@@ -256,6 +256,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="profile_jwks.html">
+   Module: profile/jwks
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="resource_file.html">
    Module: resource/file
   </a>
@@ -426,12 +431,41 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jwk">
+     Jwk
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jwks">
+     Jwks
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Type declaration
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#linkedresourceurlall">
      LinkedResourceUrlAll
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id3">
+      <a class="reference internal nav-link" href="#id6">
        Defined in
       </a>
      </li>
@@ -443,7 +477,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id4">
+      <a class="reference internal nav-link" href="#id7">
        Defined in
       </a>
      </li>
@@ -455,7 +489,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
+      <a class="reference internal nav-link" href="#id8">
        Defined in
       </a>
      </li>
@@ -467,7 +501,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id6">
+      <a class="reference internal nav-link" href="#id9">
        Defined in
       </a>
      </li>
@@ -479,7 +513,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id7">
+      <a class="reference internal nav-link" href="#id10">
        Defined in
       </a>
      </li>
@@ -491,7 +525,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id8">
+      <a class="reference internal nav-link" href="#id11">
        Defined in
       </a>
      </li>
@@ -503,7 +537,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id9">
+      <a class="reference internal nav-link" href="#id12">
        Defined in
       </a>
      </li>
@@ -515,7 +549,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id10">
+      <a class="reference internal nav-link" href="#id13">
        Defined in
       </a>
      </li>
@@ -527,7 +561,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id11">
+      <a class="reference internal nav-link" href="#id14">
        Defined in
       </a>
      </li>
@@ -539,7 +573,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id12">
+      <a class="reference internal nav-link" href="#id15">
        Defined in
       </a>
      </li>
@@ -551,7 +585,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id13">
+      <a class="reference internal nav-link" href="#id16">
        Defined in
       </a>
      </li>
@@ -563,7 +597,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id14">
+      <a class="reference internal nav-link" href="#id17">
        Defined in
       </a>
      </li>
@@ -572,7 +606,7 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id15">
+  <a class="reference internal nav-link" href="#id18">
    Functions
   </a>
   <ul class="nav section-nav flex-column">
@@ -597,7 +631,7 @@
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id16">
+      <a class="reference internal nav-link" href="#id19">
        Defined in
       </a>
      </li>
@@ -609,22 +643,22 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id17">
+      <a class="reference internal nav-link" href="#id20">
        Type parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id18">
+      <a class="reference internal nav-link" href="#id21">
        Parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id19">
+      <a class="reference internal nav-link" href="#id22">
        Returns
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id20">
+      <a class="reference internal nav-link" href="#id23">
        Defined in
       </a>
      </li>
@@ -674,6 +708,8 @@
 <ul class="simple">
 <li><p><a class="reference external" href="interfaces.html#effectiveaccess">EffectiveAccess</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#file">File</a></p></li>
+<li><p><a class="reference external" href="interfaces.html#jwk">Jwk</a></p></li>
+<li><p><a class="reference external" href="interfaces.html#jwks">Jwks</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#linkedresourceurlall">LinkedResourceUrlAll</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#resource">Resource</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a></p></li>
@@ -744,7 +780,7 @@ only available on servers that implement Web Access Control.</p>
 </div>
 <div class="section" id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L112">src/interfaces.ts:112</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L125">src/interfaces.ts:125</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -754,7 +790,43 @@ only available on servers that implement Web Access Control.</p>
 <p>A File is anything stored on a Pod in a format that solid-client does not have special affordances for, e.g. an image, or a plain JSON file.</p>
 <div class="section" id="id2">
 <h4>Defined in<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L51">src/interfaces.ts:51</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L51">src/interfaces.ts:51</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="jwk">
+<h3>Jwk<a class="headerlink" href="#jwk" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>Jwk</strong>: <code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>&gt;</p>
+<p>A JSON data structure that represents a set of public keys as a JSON object.
+See https://datatracker.ietf.org/doc/html/rfc7517 for details.</p>
+<div class="section" id="id3">
+<h4>Defined in<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L57">src/interfaces.ts:57</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="jwks">
+<h3>Jwks<a class="headerlink" href="#jwks" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>Jwks</strong>: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>A JSON data structure holding a list of JWK.</p>
+<div class="section" id="id4">
+<h4>Type declaration<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">keys</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#jwk"><code class="docutils literal notranslate"><span class="pre">Jwk</span></code></a>[]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h4>Defined in<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L62">src/interfaces.ts:62</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -763,9 +835,9 @@ only available on servers that implement Web Access Control.</p>
 <p>Ƭ <strong>LinkedResourceUrlAll</strong>: <code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <code class="docutils literal notranslate"><span class="pre">string</span></code>, <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>[]&gt;</p>
 <p>URLs of Resources linked to a given Resource, indexed by relation.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.7.0</p>
-<div class="section" id="id3">
-<h4>Defined in<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L130">src/interfaces.ts:130</a></p>
+<div class="section" id="id6">
+<h4>Defined in<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L143">src/interfaces.ts:143</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -773,9 +845,9 @@ only available on servers that implement Web Access Control.</p>
 <h3>Resource<a class="headerlink" href="#resource" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>Resource</strong>: <a class="reference external" href="interfaces.html#soliddataset"><code class="docutils literal notranslate"><span class="pre">SolidDataset</span></code></a> | <a class="reference external" href="interfaces.html#file"><code class="docutils literal notranslate"><span class="pre">File</span></code></a></p>
 <p>A Resource is something that can be fetched from a Pod - either structured data in a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>, or any other <a class="reference external" href="interfaces.html#file">File</a>.</p>
-<div class="section" id="id4">
-<h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L56">src/interfaces.ts:56</a></p>
+<div class="section" id="id7">
+<h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L69">src/interfaces.ts:69</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -783,9 +855,9 @@ only available on servers that implement Web Access Control.</p>
 <h3>SolidDataset<a class="headerlink" href="#soliddataset" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>SolidDataset</strong>: <code class="docutils literal notranslate"><span class="pre">ImmutableDataset</span></code></p>
 <p>A SolidDataset represents all Quads from a single Resource.</p>
-<div class="section" id="id5">
-<h4>Defined in<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L46">src/interfaces.ts:46</a></p>
+<div class="section" id="id8">
+<h4>Defined in<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L46">src/interfaces.ts:46</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -794,9 +866,9 @@ only available on servers that implement Web Access Control.</p>
 <p>Ƭ <strong>Thing</strong>: <code class="docutils literal notranslate"><span class="pre">Subject</span></code></p>
 <p>A Thing represents all Quads with a given Subject URL and a given Named
 Graph, from a single Resource.</p>
-<div class="section" id="id6">
-<h4>Defined in<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L62">src/interfaces.ts:62</a></p>
+<div class="section" id="id9">
+<h4>Defined in<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L75">src/interfaces.ts:75</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -804,9 +876,9 @@ Graph, from a single Resource.</p>
 <h3>ThingLocal<a class="headerlink" href="#thinglocal" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>ThingLocal</strong>: <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a> &amp; { <code class="docutils literal notranslate"><span class="pre">url</span></code>: <code class="docutils literal notranslate"><span class="pre">LocalNodeIri</span></code>  }</p>
 <p>A <a class="reference external" href="interfaces.html#thing">Thing</a> whose full Subject URL will be determined when it is persisted.</p>
-<div class="section" id="id7">
-<h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L71">src/interfaces.ts:71</a></p>
+<div class="section" id="id10">
+<h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L84">src/interfaces.ts:84</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -814,9 +886,9 @@ Graph, from a single Resource.</p>
 <h3>ThingPersisted<a class="headerlink" href="#thingpersisted" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>ThingPersisted</strong>: <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a> &amp; { <code class="docutils literal notranslate"><span class="pre">url</span></code>: <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>  }</p>
 <p>A <a class="reference external" href="interfaces.html#thing">Thing</a> for which we know what the full Subject URL is.</p>
-<div class="section" id="id8">
-<h4>Defined in<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L67">src/interfaces.ts:67</a></p>
+<div class="section" id="id11">
+<h4>Defined in<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L80">src/interfaces.ts:80</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -825,9 +897,9 @@ Graph, from a single Resource.</p>
 <p>Ƭ <strong>UploadRequestInit</strong>: <code class="docutils literal notranslate"><span class="pre">Omit</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">RequestInit</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;method&quot;</span></code>&gt;</p>
 <p>A RequestInit restriction where the method is set by the library</p>
 <p>Please note that this function is still experimental and can change in a non-major release.</p>
-<div class="section" id="id9">
-<h4>Defined in<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L232">src/interfaces.ts:232</a></p>
+<div class="section" id="id12">
+<h4>Defined in<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L245">src/interfaces.ts:245</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -835,9 +907,9 @@ Graph, from a single Resource.</p>
 <h3>Url<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>Url</strong>: <code class="docutils literal notranslate"><span class="pre">NamedNode</span></code></p>
 <p>Alias to indicate where we expect to be given a URL represented as an RDF/JS NamedNode.</p>
-<div class="section" id="id10">
-<h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L29">src/interfaces.ts:29</a></p>
+<div class="section" id="id13">
+<h4>Defined in<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L29">src/interfaces.ts:29</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -845,9 +917,9 @@ Graph, from a single Resource.</p>
 <h3>UrlString<a class="headerlink" href="#urlstring" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>UrlString</strong>: <code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 <p>Alias to indicate where we expect to be given a URL.</p>
-<div class="section" id="id11">
-<h4>Defined in<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L35">src/interfaces.ts:35</a></p>
+<div class="section" id="id14">
+<h4>Defined in<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L35">src/interfaces.ts:35</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -855,9 +927,9 @@ Graph, from a single Resource.</p>
 <h3>WebId<a class="headerlink" href="#webid" title="Permalink to this headline">¶</a></h3>
 <p>Ƭ <strong>WebId</strong>: <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p>
 <p>Alias to indicate where we expect to be given a WebId.</p>
-<div class="section" id="id12">
-<h4>Defined in<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L41">src/interfaces.ts:41</a></p>
+<div class="section" id="id15">
+<h4>Defined in<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L41">src/interfaces.ts:41</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -867,9 +939,9 @@ Graph, from a single Resource.</p>
 <p>Data that was sent to a Pod includes this metadata describing its relation to the Pod Resource it was sent to.</p>
 <p><strong>Do not read these properties directly</strong>; their internal representation may change at any time.
 Instead, use functions such as <a class="reference external" href="resource_resource.html#getsourceurl">getSourceUrl</a>, [[isRawData]] and <a class="reference external" href="resource_resource.html#getcontenttype">getContentType</a>.</p>
-<div class="section" id="id13">
-<h4>Defined in<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L89">src/interfaces.ts:89</a></p>
+<div class="section" id="id16">
+<h4>Defined in<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L102">src/interfaces.ts:102</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -879,14 +951,14 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 <p>Data that was fetched from a Pod includes this metadata describing its relation to the Pod Resource it was fetched from.</p>
 <p><strong>Do not read these properties directly</strong>; their internal representation may change at any time.
 Instead, use functions such as <a class="reference external" href="resource_resource.html#getsourceurl">getSourceUrl</a>, [[isRawData]] and <a class="reference external" href="resource_resource.html#getcontenttype">getContentType</a>.</p>
-<div class="section" id="id14">
-<h4>Defined in<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L138">src/interfaces.ts:138</a></p>
+<div class="section" id="id17">
+<h4>Defined in<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L151">src/interfaces.ts:151</a></p>
 </div>
 </div>
 </div>
-<div class="section" id="id15">
-<h2>Functions<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<h2>Functions<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="hasresourceinfo">
 <h3>hasResourceInfo<a class="headerlink" href="#hasresourceinfo" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>hasResourceInfo</strong>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>): resource is T &amp; WithResourceInfo</p>
@@ -925,9 +997,9 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 <p>resource is T &amp; WithResourceInfo</p>
 <p>True if <code class="docutils literal notranslate"><span class="pre">dataset</span></code> includes metadata about the Resource it was sent to, false if not.</p>
 </div>
-<div class="section" id="id16">
-<h4>Defined in<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L186">src/interfaces.ts:186</a></p>
+<div class="section" id="id19">
+<h4>Defined in<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L199">src/interfaces.ts:199</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -936,8 +1008,8 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 <p>▸ <strong>hasServerResourceInfo</strong>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>): resource is T &amp; WithResourceInfo &amp; object</p>
 <p>Verify whether a given SolidDataset includes metadata about where it was retrieved from.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 0.6.0</p>
-<div class="section" id="id17">
-<h4>Type parameters<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id20">
+<h4>Type parameters<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -949,8 +1021,8 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 </tbody>
 </table>
 </div>
-<div class="section" id="id18">
-<h4>Parameters<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id21">
+<h4>Parameters<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -964,14 +1036,14 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 </tbody>
 </table>
 </div>
-<div class="section" id="id19">
-<h4>Returns<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id22">
+<h4>Returns<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
 <p>resource is T &amp; WithResourceInfo &amp; object</p>
 <p>True if <code class="docutils literal notranslate"><span class="pre">dataset</span></code> includes metadata about the Resource it was retrieved from, false if not.</p>
 </div>
-<div class="section" id="id20">
-<h4>Defined in<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f17fd5e/src/interfaces.ts#L203">src/interfaces.ts:203</a></p>
+<div class="section" id="id23">
+<h4>Defined in<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/59162bb/src/interfaces.ts#L216">src/interfaces.ts:216</a></p>
 </div>
 </div>
 </div>
@@ -986,7 +1058,7 @@ Instead, use functions such as <a class="reference external" href="resource_reso
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="acp_rule.html" title="previous page">Module: acp/rule</a>
-    <a class='right-next' id="next-link" href="resource_file.html" title="next page">Module: resource/file</a>
+    <a class='right-next' id="next-link" href="profile_jwks.html" title="next page">Module: profile/jwks</a>
 
               </div>
               
