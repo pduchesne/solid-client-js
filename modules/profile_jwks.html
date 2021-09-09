@@ -533,6 +533,7 @@
 <h3>addJwkToJwks<a class="headerlink" href="#addjwktojwks" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>addJwkToJwks</strong>(<code class="docutils literal notranslate"><span class="pre">jwk</span></code>, <code class="docutils literal notranslate"><span class="pre">jwksIri</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference external" href="interfaces.html#jwks"><code class="docutils literal notranslate"><span class="pre">Jwks</span></code></a>&gt;</p>
 <p>Fetch a JWKS at a given IRI, and add the given JWK to the obtained key set.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.12.0</p>
 <div class="section" id="parameters">
 <h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -565,7 +566,7 @@
 </div>
 <div class="section" id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0e03cb2/src/profile/jwks.ts#L112">src/profile/jwks.ts:112</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f02531c/src/profile/jwks.ts#L115">src/profile/jwks.ts:115</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -577,6 +578,7 @@ Retrieves the profile document for the specified WebID and looks up the associat
 JWKS. Having added the given key to the JWKS, this function overwrites the
 previous JWKS so that the new version is saved. This assumes the JWKS is hosted
 at a read-write IRI, such as in a Solid Pod.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.12.0</p>
 <div class="section" id="id2">
 <h4>Parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -608,7 +610,7 @@ at a read-write IRI, such as in a Solid Pod.</p>
 </div>
 <div class="section" id="id4">
 <h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0e03cb2/src/profile/jwks.ts#L157">src/profile/jwks.ts:157</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f02531c/src/profile/jwks.ts#L161">src/profile/jwks.ts:161</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -616,6 +618,7 @@ at a read-write IRI, such as in a Solid Pod.</p>
 <h3>getProfileJwksIri<a class="headerlink" href="#getprofilejwksiri" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>getProfileJwksIri</strong>(<code class="docutils literal notranslate"><span class="pre">profileDocument</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>): <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Look for a JWKS IRI optionally advertized from a profile document.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.12.0</p>
 <div class="section" id="id5">
 <h4>Parameters<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -640,11 +643,11 @@ at a read-write IRI, such as in a Solid Pod.</p>
 <div class="section" id="id6">
 <h4>Returns<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
-<p>The JWKS IRI associated with the WebID, if</p>
+<p>The JWKS IRI associated with the WebID, if any.</p>
 </div>
 <div class="section" id="id7">
 <h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0e03cb2/src/profile/jwks.ts#L90">src/profile/jwks.ts:90</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f02531c/src/profile/jwks.ts#L92">src/profile/jwks.ts:92</a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -652,6 +655,7 @@ at a read-write IRI, such as in a Solid Pod.</p>
 <h3>setProfileJwks<a class="headerlink" href="#setprofilejwks" title="Permalink to this headline">¶</a></h3>
 <p>▸ <strong>setProfileJwks</strong>&lt;<code class="docutils literal notranslate"><span class="pre">Dataset</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">profileDocument</span></code>, <code class="docutils literal notranslate"><span class="pre">webId</span></code>, <code class="docutils literal notranslate"><span class="pre">jwksIri</span></code>): <code class="docutils literal notranslate"><span class="pre">Dataset</span></code></p>
 <p>Set a JWKS IRI associated with a WebID in a profile document.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.12.0</p>
 <div class="section" id="type-parameters">
 <h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -699,7 +703,7 @@ at a read-write IRI, such as in a Solid Pod.</p>
 </div>
 <div class="section" id="id10">
 <h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/0e03cb2/src/profile/jwks.ts#L68">src/profile/jwks.ts:68</a></p>
+<p><a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/f02531c/src/profile/jwks.ts#L69">src/profile/jwks.ts:69</a></p>
 </div>
 </div>
 </div>
